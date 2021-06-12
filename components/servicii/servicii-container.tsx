@@ -8,18 +8,18 @@ const ServiciiContainer =() => {
     <>
 
 <section className="servicii-detalii">
-        <div className="section-img"></div>
-        <div className="section-title"></div>
+        <main className="section-img"></main>
+        <main className="section-title"></main>
         <h2>Servicii</h2>
-        <div className="h1-separator">
+        <main className="h1-separator">
                 <Image src="/assets/images/decorative/h1-separator-custom-icon-1.png" alt="image"width={50} height={50}/>
                 
-            </div>
+            </main>
 <ServiciiWrapper />
-<div className="h1-separator">
+<main className="h1-separator">
                 <Image src="/assets/images/decorative/h1-separator-custom-icon-1.png" alt="image"width={50} height={50}/>
                 
-            </div>
+            </main>
 </section>
 </>
     )

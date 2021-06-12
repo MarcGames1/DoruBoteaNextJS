@@ -14,12 +14,12 @@ export default function ServiciiWrapper(){
     const [state, setState] = useState(servicii);
 
 return(
-    <div className="servicii-wrapper">
+    <main className="servicii-wrapper">
     
     {state.map(({ id, ...otherSectionProps }) => (
         <ServiciiCard key={id} {...otherSectionProps} />
         ))}
-    </div>
+    </main>
 )
 }
 

@@ -1,7 +1,7 @@
 const Form = ()=>{
     return(
         <>
-        <div className="form-container" id="contact">
+        <main className="form-container" id="contact">
     <h1>Contact Rapid</h1>
     <form action="/pages/success.html" method="post">
         <label htmlFor="nume">Nume</label>
@@ -28,7 +28,7 @@ const Form = ()=>{
         </fieldset>
         <button className="btn from-right" type="submit">Trimiteti!</button>
     </form>
-</div>
+</main>
 </>
     )
 }

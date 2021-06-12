@@ -20,8 +20,8 @@ function FirsSection(){
     setTimeout(changeText, 3000);
     return(
         <section className="first-section" id="top">
-        <div className="content">
-            <div className="appearFirstL">
+        <main className="content">
+            <main className="appearFirstL">
 
                 
                 <h1 className="hero-text">
@@ -33,8 +33,8 @@ function FirsSection(){
 
                 <a className="main-cta btn from-left" href="#servicii">vedeti mai multe</a>
 
-            </div>
-        </div>
+            </main>
+        </main>
 
     </section>  
       )

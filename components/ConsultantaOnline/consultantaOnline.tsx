@@ -138,14 +138,14 @@ fieldset label a:hover{
         <section id="consultanta-online">
 
 
-<div className="description content">
-    <div>
+<main className="description content">
+    <main>
         <h1 className="section-head">AVOCAT DORU BOTEA</h1>
         <h2 className="section-head">CONSULTANTA JURIDICA ONLINE!</h2>
         <h3 className="section-head">APROAPE DE DUMNEAVOASTRA ORIUNDE ATI FI!</h3>
-    </div>
+    </main>
 
-    <div className="paragraphs">
+    <main className="paragraphs">
 
         <p>Cabinet Avocat Doru Botea vine în întâmpinarea nevoilor clienţilor, prin asigurarea de servicii de
             consultanţă juridică online.</p>
@@ -163,8 +163,8 @@ fieldset label a:hover{
             ce în ce
             mai largă de servicii.</p>
 
-    </div>
-</div>
+    </main>
+</main>
 
 <Form/>
 <GoogleMaps />

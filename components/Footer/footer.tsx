@@ -6,39 +6,39 @@ const Footer = () => {
         <>
  
 <footer className="site-footer">
-    <div className = "container">
+    <main className = "container">
 
-        <div className="grid-container">
-            <div className="grid-item">               
+        <main className="grid-container">
+            <main className="grid-item">               
                 <img src = "../../assets/images/logo.png" className = "logo-img"/>
-            </div>
+            </main>
 
 
-            <div className="grid-item inner-grid-container">
+            <main className="grid-item inner-grid-container">
                 
-                <div className="grid-item"><a href="#servicii">Servicii</a></div>   
-                <div className="grid-item"><a href="/consultanta-online">Consultanta Online</a></div>   
-                <div className="grid-item"><a href="/contact">Contact</a></div>   
-                <div className="grid-item"><a href="/blog">Blog</a></div>   
-            </div>
+                <main className="grid-item"><a href="#servicii">Servicii</a></main>   
+                <main className="grid-item"><a href="/consultanta-online">Consultanta Online</a></main>   
+                <main className="grid-item"><a href="/contact">Contact</a></main>   
+                <main className="grid-item"><a href="/blog">Blog</a></main>   
+            </main>
             
 
 
 
-            <div className="grid-item">
-                <div className = "sso">
+            <main className="grid-item">
+                <main className = "sso">
                     <a href= "tel:0744312302"><img src="../../assets/images/icons/phone.png" className="circle-icon"/></a>
                     <a href="https://wa.me/+40744312032"><img src="../../assets/images/icons/wa-mono.png" className="circle-icon"/></a>
                     <a href= "https://www.facebook.com/avocatdorubotea"><img src="../../assets/images/icons/f.png" className="circle-icon"/></a>
                     <a href= ""><img src="../../assets/images/icons/mail.png" className="circle-icon"/></a>
-                </div>
-            </div>   
-        </div>
+                </main>
+            </main>   
+        </main>
         <hr/>
 
         <p>Toate Drepturile sunt rezervate de Cabinet Avocat Doru Botea | site-ul a fost dezvoltat si optimizat SEO de Marcu Alexandru </p>
 
-    </div>
+    </main>
 </footer>
         </>
     )
