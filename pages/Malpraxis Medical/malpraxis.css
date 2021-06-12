@@ -1,0 +1,18 @@
+@import "/css/secondaryPages.css";
+:root{
+    --background_image: url(./malpraxis.jpg);
+}
+
+
+section div{
+    background-image: var(--background_image);
+}
+
+.categorie h2{
+    display: block;
+    padding: 2em 0;
+}
+.categorie strong{
+    display: block;
+    margin: 2em 0;
+}

@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+:root{
+ --decorativeFont: 'Noto Serif', serif;
+  
+    --def:black;
+    /* --secondary-button-color: */
+  --primary-color:#282E3F;
+  --secondary-color:#333a4d;
+  --hover-color:#717583;
+  --active-color:black;
+  --secondary-font-color:#ab8356;
+  --primary-font-color:white;
+  --primary-color-transparent:rgba(40, 46, 63, 0.8);
+  --transparent:rgba(0, 0, 0, 0.7);
+  --site-width:96vw;
+  --bar-heigth:6vh;
+
+  --fundal-formular: #ab8356;
+  --form-input:#ff0404;
+  }
+

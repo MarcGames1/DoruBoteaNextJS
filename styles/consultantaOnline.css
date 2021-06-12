@@ -1,0 +1,30 @@
+
+
+
+#consultanta-online{
+    max-width: 90vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--transparent);
+    gap: 10px;
+   
+}
+
+#consultanta-online .background{
+    height: auto;
+}
+#consultanta-online .form-container, #consultanta-online .description{
+    align-self: center;
+    justify-self: center;
+    
+    padding-top: 2em;
+}
+#consultanta-online .form-container{
+   grid-column: 1 / 2;
+   grid-row: 1 / 2;
+ 
+}
+

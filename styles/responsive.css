@@ -1,0 +1,245 @@
+@media screen and (max-width: 1172px){
+  .contact svg{
+    display: block;
+    margin:auto;
+    
+  }
+
+  .logo{
+    height: 70%
+  }
+}
+
+@media screen and (max-width: 969px){
+  .second-section h3{
+    line-height: 2.5rem;
+}
+  .cards-large .card-container{
+
+  width:300px;
+  height: 300px;
+  /* border: 3px red solid */
+  }
+
+  .cards{
+    align-items: center;
+    flex-direction: column;
+    width: 100% !important;
+    
+  }
+  .secondary-cards{
+    max-width: none;
+    width: 80% ;
+    
+  }
+  .card-container, .secondary-cards{
+    margin-bottom:1em;
+    
+    
+  }
+  .contact2{
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
+  }
+  
+  article{
+    height: auto;
+ display: flex;
+ flex-flow: column;
+  }
+ 
+  .cobco img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 878px){
+ 
+
+  .other{
+    display: none;
+  }
+  .contact a svg{
+    display: none;
+  }
+  .contact a span {
+    font-size: 1rem
+  }
+  #servicii{
+    
+    width: 100%;
+  }
+  /* .servicii-container .content{
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .servicii-container:nth-child(even) .content{
+    
+    flex-direction: column;
+  } */
+
+
+
+  .servicii-wrapper{
+   max-width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-items: center;
+  }
+  .servicii-container{
+    max-width: 100%;
+    
+  }
+
+  .whatsapp-cta{
+    left: 85vw;
+    
+  }
+  #buttom-email span{
+    font-size: 50%;
+    }
+
+    @supports not(-webkit-touch-callout: none){
+     
+    }
+    
+  @supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */ 
+
+
+    *{background-attachment: scroll !important;}
+    .whatsapp-cta{
+      transform: scale(0.7);
+
+      left: 89%;
+    }
+    .first-section{
+      background-image: url(/public/assets/images/background1\ small.jpg);
+    }
+      body{
+        background-size: contain;
+      }
+   .cards{
+     gap: 10px;
+    
+   }
+   .secondary-cards{
+    /* border: 5px solid black */
+    margin:1em;
+   }
+  }
+  
+
+  @supports(padding: max(0px)) {
+    .post {
+        padding-left: max(12px, env(safe-area-inset-left));
+        padding-right: max(12px, env(safe-area-inset-right));
+    }
+}
+  
+}
+
+@media screen and (max-width: 813px){
+    .contact-header{
+      grid-template-columns: 2fr 2fr 0.5fr 0.5fr;
+    }
+
+    .top-header{
+      height: auto;
+    }
+
+    
+    #consultanta-online{
+     
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    
+    }
+    .cards{
+      height: auto;
+    }
+  }
+  @media screen and (max-width: 715px){
+    .contact svg{display: none;}
+    .contact a span{ font-size: 1rem;}
+    .main-cta{letter-spacing: 0em;}
+  }
+
+  @media screen and (max-width: 647px) {
+    header h1:first-child{
+      display:  none;
+    }
+    .top-header  {display: none;}
+   
+     #icon svg {
+     
+      display: inline-block;
+      /* float: left; */
+      z-index: 10;
+      position: relative;
+
+      
+    }
+
+    .cards-large{
+      width: 100%;
+      /* display: block; */
+      flex-flow: column nowrap;
+    }
+      
+  
+    
+    
+
+    .contact a span:last-of-type{
+      position: relative;
+      padding: 0;
+    }
+    .bot-header  nav ul  li{
+      display: none;
+    }
+    .phone-layout{
+      height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+     }
+    .phone-layout img{
+      
+      position: relative;
+      /* transform: scale(.5); */
+      
+      height: 6vh;
+      /* float: right; */
+    }
+    .phone-layout .bars{
+      transform: scale(.5);
+    }
+  }
+  
+  .responsive {
+  position: relative;
+  /* bottom: -15vh; */
+  z-index: 10;
+  background-color: var(--secondary-color);
+  display: block !important;
+  }
+  .phone-layout .phone{
+    display: flex;
+    max-width: 80%;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0%;
+    vertical-align: middle;
+  }
+
+  @media screen and (max-width: 647px){
+    .main-cta, .hero-text{
+      font-size: 1rem;
+    }
+  }

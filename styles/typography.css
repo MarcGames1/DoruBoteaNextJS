@@ -1,0 +1,59 @@
+/* #consssultanta-online .content{
+    justify-self: right;
+    justify-content: center;
+    text-align: center;
+    grid-column: 2 / 3 ;
+    grid-row: 1 / 1;
+    width: 100%;
+
+} */
+    
+    
+    .btn{
+        text-transform: uppercase;
+    }
+    .servicii-detalii p {
+        padding: 2em 2em 0em 2em;
+    }
+p{
+    text-align: left;
+
+    color: #adb7bd; font-family: 'Lucida Sans', Arial, sans-serif; font-size: 16px; line-height: 26px; text-indent: 30px; margin: 0; 
+}
+
+     .section-head{
+        /* word-spacing: 1.2rem; */
+        line-height: 2em;
+        font-family: var(--decorativeFont);
+        padding: auto;
+    }
+    .description{
+        padding: 1em;
+        width: 100%;
+        height: 100%;
+        /* background-color:rgba(0, 0, 0, 0.7) !important; */
+    }
+    .paragraphs ,#gdpr-label{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+
+    .h1-separator{
+        margin:2rem auto;
+        display: block;
+        text-align: center;
+      }
+
+      .second-section h3{
+          line-height: 7rem;
+      }
+
+      #consultanta-online .description{
+          margin-top: 0;
+          padding-top: 0;
+      }
+      #consultanta-online .description p{
+        margin-top: 1em;
+        padding-top: 0;
+    }

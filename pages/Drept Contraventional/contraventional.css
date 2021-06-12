@@ -1,0 +1,9 @@
+@import "/css/secondaryPages.css";
+:root{
+    --background_image: url(./contraventional.png);
+}
+
+
+section div{
+    background-image: var(--background_image);
+}

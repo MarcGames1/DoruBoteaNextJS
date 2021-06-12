@@ -1,0 +1,169 @@
+
+
+.imobiliar:hover:after {
+   
+    background-image: url(/assets/images/svg/imobiliarW.png);
+}
+
+.contraventional:hover:after {
+    background-image: url(/assets/images/svg/contraventionalW.png);
+}
+
+.bancar:hover:after {
+    background-image: url(/assets/images/svg/bancarW.png);
+}
+
+.administrativ:hover:after {
+    background-image: url(/assets/images/svg/administrativW.png);
+}
+
+.administrativ,
+.bancar,
+.contraventional,
+.imobiliar
+
+ {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    border-right:none !important;
+   
+    
+    
+}
+
+    cards::after{
+        transform-origin: top;
+        transform: scaleY(0.1);
+        font-size: .0001rem;
+        
+
+    }
+
+.administrativ:hover::after,
+.bancar:hover::after,
+.civil:hover::after,
+.contraventional:hover::after,
+.imobiliar:hover::after,
+.imobiliar:hover::after,
+.executari:hover::after,
+.familial:hover::after,
+.malpraxis:hover::after,
+.muncii:hover::after,
+.penal:hover::after, .card-container:hover::after{
+    transform: scaleY(1);
+    /* z-index: 0; */
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1em;
+   transition: all;
+   transition-duration: .5s;
+   transition-timing-function: ease-in-out;
+   transition-delay: .0s;
+   transform-origin: middle;
+   content: "Vedeti mai multe";
+   z-index: 2;
+
+}
+
+#servicii{
+    height: auto !important;
+}
+
+.card-container, .secondary-cards{
+    box-shadow: 10px 10px 5px var(--transparent);
+}
+.cards-large{
+    margin: 2em;
+    display: flex;
+    width: 100%;
+    min-height: 20vh;
+   min-height: 50vh;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    
+}
+
+.cards-large .card-container, .secondary-cards {
+display: flex;
+flex-flow: column nowrap;
+
+
+    padding: 0 0;
+    position: relative;
+    max-width: 30%;
+    width: 13%;
+    max-height: 20vh;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    padding: 1rem;
+    min-width: 141px;
+    height:150px ;
+    
+
+
+
+    background-color: var(--primary-color);
+}
+.secondary-cards{
+    height: auto;
+}
+    
+
+.cards-large .card-container  img{
+    object-fit: scale-down;
+position: relative;
+margin: auto;
+max-width: 50%;
+max-height: 50%;
+justify-self: normal;
+align-self: center;
+
+
+}
+.cards-large .card-container  h1{
+display: block;
+justify-self:baseline;
+align-self: center;
+max-height: 30%;
+font-size: .8rem;
+/* margin-top: 10%; */
+color: white;
+
+}
+.card-container:hover::after{font-size: 1.3rem;}
+.cards-large .card-container:hover h1, .cards-large .card-container:hover img{
+    display: hidden;
+}
+
+
+
+.secondary-cards{
+    min-width: 20%;
+    min-height: 100px;
+    font-size: 1.2em;
+    color: white;
+}
+
+.secondary-cards:hover::after{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.secondary-cards .secondary{
+ color:var(--secondary-font-color);
+ font-size: 0.9rem;
+ font-weight: normal; 
+}
