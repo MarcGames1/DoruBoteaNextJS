@@ -6,7 +6,7 @@ button{
 	border-radius: 10px;
 	border: none;
 }
-.btn {		
+.btn-1 {		
 	z-index: 2;
 	position: relative;	
 	padding: 1.4rem 4.2rem;
@@ -21,24 +21,24 @@ button{
 	text-align: center;
 }
 
-.btn:before, .btn:after {
+.btn-1:before, .btn-1:after {
 	content: '';
 	position: absolute;	
 	transition: inherit;
 	z-index: -1;
 }
 
-.btn:hover {
+.btn-1:hover {
 	color: var(--def);
 	/* transition-delay: .5s; */
 }
 
-.btn:hover:before {
+.btn-1:hover:before {
 	
 	transition-delay: 0s;
 }
 
-.btn:hover:after {
+.btn-1:hover:after {
 text-align: center;
 display: flex;
 flex-direction: row;
@@ -55,7 +55,7 @@ transition-delay: .35s;
 
 }
 
-.btn:hover:after .servicii{
+.btn-1:hover:after .servicii{
 	content: 'aflati mai multe';
 	background: var(--secondary-font-color);
 	transition-delay: .35s;

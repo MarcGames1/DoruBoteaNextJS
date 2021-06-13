@@ -1,5 +1,5 @@
 /* @import url(navBar.css); */
-@import url(buttons.css);
+/* @import url(buttons.css); */
 @import url(variables.css);
 @import url(icons.css);
 @import url(keyframes.css);
@@ -192,4 +192,8 @@ position: relative;
 
 .min-100-vh{
   min-height: 100vh;
+}
+
+.bordered-r{
+  border-right: 1px solid var(--secondary-color);
 }
