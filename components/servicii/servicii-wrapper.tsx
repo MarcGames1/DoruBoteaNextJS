@@ -4,25 +4,27 @@ import servicii from './date/servicii.js';
 
 import ServiciiCard from './serviciiCard'
 
-import  { useState } from "react";
+import { useState } from "react";
 
 
 
 
 
-export default function ServiciiWrapper(){
+ function ServiciiWrapper() {
     const [state, setState] = useState(servicii);
+    return (
+        <>
+        <div className="container-fluid">
 
-return(
-    <main className="servicii-wrapper">
-    
-    {state.map(({ id, ...otherSectionProps }) => (
-        <ServiciiCard key={id} {...otherSectionProps} />
-        ))}
-    </main>
+            <div className="row d-flex justify-content-around">
+                {state.map(({ id, ...otherSectionProps }) => (
+                    <ServiciiCard key={id} {...otherSectionProps} />
+                    ))}
+            </div>
+        </div>
+        </>
 )
 }
 
-            
-        
-    
+
+export default  ServiciiWrapper;

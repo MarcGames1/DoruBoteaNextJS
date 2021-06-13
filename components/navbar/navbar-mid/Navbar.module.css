@@ -1,0 +1,5 @@
+.icon{
+    color:var(--secondary-font-color);
+    align-self: center;
+    font-size: 2em !important;
+}

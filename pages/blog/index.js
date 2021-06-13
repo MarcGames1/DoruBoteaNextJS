@@ -3,40 +3,40 @@ import Link from "next/link";
 
 function IndexPage(props) {
   return (
-    <main className = "my-5">
-        <div className="container" >
+    <a className = "my-5">
+        <a className="container" >
         <section className="text-center">
         <h4 className="mb-5"><strong>Latest posts</strong></h4>
         {/* <div className="row"> */}
-      <div className="row">
+      <a className="row">
         {props.blogs.map((blog, idx) => {
             return (
-              <div className="col-lg-4 col-md-12 mb-4">
-                <div key={blog.id}>
+              <a className="col-lg-4 col-md-12 mb-4">
+                <a key={blog.id}>
             <a className="card transparent-card">
-              <div className="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+              <a className="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                 <img src={blog.img} className="img-fluid" layout="fill" height={300} width= {150} object-fit= "contain" />
                
-                  <div className="mask" style={{backgroundColor:"rgba(251, 251, 251, 0.15)"}}></div>
+                  <a className="mask" style={{backgroundColor:"rgba(251, 251, 251, 0.15)"}}></a>
                 
-              </div>
-              <div className="card-body">
+              </a>
+              <a className="card-body">
                 <h5 className="text-secondary card-title">{blog.title}</h5>
                 <p className="card-text">{blog.description} </p>
                 <Link href={`/blog/${blog.slug}`}>
                 <a href="#!" className="text-secondary btn from-left">Cititi</a>
                 </Link>
-              </div>
+              </a>
             </a>
-            </div>
-          </div>
+            </a>
+          </a>
           );
         })}
-      </div>
+      </a>
         {/* </div> */}
         </section>
-      </div>
-    </main>
+      </a>
+    </a>
   );
 }
 

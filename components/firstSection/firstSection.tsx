@@ -15,26 +15,26 @@ function FirsSection(){
         (index < textContent.length-1) ? index++ : index=0;
         currentText =  textContent[index]
         setState(currentText)
-        
     }
     setTimeout(changeText, 3000);
+        
     return(
         <section className="first-section" id="top">
-        <main className="content">
-            <main className="appearFirstL">
+        <div className="content">
+            <div className="appearFirstL">
 
                 
-                <h1 className="hero-text">
+                <h1 className="mb-4 hero-text">
                     Avocat <span className="name">Doru Botea</span>
-                    <br className="line" />
-                    <span className="specializari">Profesionalism si Incredere</span>
-                    <span className="dinamic">{state}</span>
+                    <br className="my-4 d-block line" />
+                    <span className="my-4 d-block specializari ">Profesionalism si Incredere</span>
+                    <span className="d-block mt-4 dinamic">{state}</span>
                 </h1>
 
                 <a className="main-cta btn from-left" href="#servicii">vedeti mai multe</a>
 
-            </main>
-        </main>
+            </div>
+        </div>
 
     </section>  
       )

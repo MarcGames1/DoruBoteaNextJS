@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap);
 :root{
  --decorativeFont: 'Noto Serif', serif;
   
@@ -19,3 +19,20 @@
   --form-input:#ff0404;
   }
 
+/*  */
+
+.bg-primary-color{
+  background-color:var(--primary-color) ;
+}
+.primary-color{
+  color: var(--primary-text-color)
+}
+.secondary-color{
+  color: var(--secondary-font-color-color);
+}
+.bg-secondary-color{
+  background-color: var(--secondary-color);
+}
+.white{
+  color:white;
+}

@@ -1,21 +1,20 @@
 import React from "react";
-import Footer from '../../components/Footer/footer'
-import NavBar from '../../components/navbar/navbar'
+
 import {NextSeo} from 'next-seo'
 function BlogPostPage(props) {
   return (
-    <div>
+    <a className ="min-100-vh">
       <NextSeo title = {props.blog.title} description ={props.blog.description}/>
-      <NavBar />
-      <div className="container">
+      
+      <a className="container">
         
       <h1 className="text-primary text-capitalize text-center text-light">{props.blog.title}</h1>
       <section dangerouslySetInnerHTML={{ __html: props.blog.content }}></section>
       <br/>
 
-      </div>
-      <Footer />
-    </div>
+      </a>
+      
+    </a>
   );
 }
 

@@ -4,12 +4,12 @@
 
 
 html{
-  background-color: var(--primary-color);
+  background-color: black;
 
 }
 
 body{
-  background-image: url("");
+  /* background-image: url(""); */
     display: flex;
     flex-direction: column;
   }
@@ -203,42 +203,6 @@ body{
     text-align: center;
    color: var( --secondary-font-color);
    /* background-color: var(--transparent); */
-  }
-
-  .servicii-wrapper{
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-items:flex-start;
-    /* align-items: flex-start; */
-    justify-content: center;
-  }
-  .servicii-container{
-   /* border: black solid 3px; */
-    max-width: 25%;
-    padding-bottom: 3rem;
-  }
-  
-  .servicii-container .content{
-    /* background-attachment: fixed; */
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .servicii-container div a{
-    font-size: .8rem;
-  }
-  /* .servicii-container:nth-child(even) .content{
-    display: flex;
-    flex-direction: row-reverse;
-  } */
-  
-  
-  .servicii-container img{
-    max-width: 30%;
-    max-height: 30%;
-    min-width: auto;
-    margin: 0 auto;
   }
 
 
