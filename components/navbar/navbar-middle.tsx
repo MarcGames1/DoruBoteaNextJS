@@ -22,7 +22,7 @@ const NavbarMid = () => {
                     <NavBarPhone />
                 </div>
                <div className="col-3">
-                   <Search />
+                   <SearchComponent />
                </div>
                 <div className="d-flex justify-content-around align-self-center justify-self-end col-2">
                    <FacebookComponent />

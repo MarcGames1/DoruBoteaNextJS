@@ -1,14 +1,14 @@
-import fs from 'fs'
-import path from 'path'
-import matter from 'gray-matter'
-import remark from 'remark'
-import html from 'remark-html'
-import {getStaticProps} from '../../pages/blog/index'
+// import fs from 'fs';
+// import path from 'path';
+// import matter from 'gray-matter';
+// import remark from 'remark';
+// import html from 'remark-html';
+// import getStaticProps from '../../pages/blog/index';
+import { BlogPost } from '../../scripts/blog';
 
 
-
-const posts = process.env.NODE_ENV === 'production' ? require('../../cache/data').posts : getStaticProps()
-
+const posts = process.env.NODE_ENV === 'production' ? require('/cache/data').posts : getStaticProps()
+{console.log(posts)}
 export default (req, res) => {
   const results = req.query.q ?
     posts.filter(post => post.title.toLowerCase().includes(req.query.q)) : []
