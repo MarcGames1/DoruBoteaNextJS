@@ -140,9 +140,9 @@ fieldset label a:hover{
 
 <main className="description content">
     <main>
-        <h1 className="section-head">AVOCAT DORU BOTEA</h1>
-        <h2 className="section-head">CONSULTANTA JURIDICA ONLINE!</h2>
-        <h3 className="section-head">APROAPE DE DUMNEAVOASTRA ORIUNDE ATI FI!</h3>
+        <h2 className="section-head">AVOCAT DORU BOTEA</h2>
+        <h3 className="section-head">CONSULTANTA JURIDICA ONLINE!</h3>
+        <h4 className="section-head">APROAPE DE DUMNEAVOASTRA ORIUNDE ATI FI!</h4>
     </main>
 
     <main className="paragraphs">

@@ -24,12 +24,12 @@ function FirsSection(){
             <div className="appearFirstL">
 
                 
-                <h1 className="mb-4 hero-text">
+                <h2 className="mb-4 hero-text">
                     Avocat <span className="name">Doru Botea</span>
                     <br className="my-4 d-block line" />
                     <span className="my-4 d-block specializari ">Profesionalism si Incredere</span>
                     <span className="d-block mt-4 dinamic">{state}</span>
-                </h1>
+                </h2>
 
                 <a className="main-cta btn from-left" href="#servicii">vedeti mai multe</a>
 

@@ -4,28 +4,32 @@ const servicii =[
         name: "Drept Penal",
         icon: "/assets/images/svg/penal.png",
         description: "Asistență și reprezentare juridică în faza de urmărire penală și în fața instanțelor de judecată atât pentru persoane cercetate (suspecți, inculpați) cât și pentru părți civile/vătămate.",
-        route:" /drept-penal"
+        route:" /drept-penal",
+        alt:"icon Drept Penal"
     },
     {
         id:2,
         name: "Dreptul Familiei",
         icon: "/assets/images/svg/familie.png",
         description:"Consultanță și asistență juridica în cauzele de divort, stabilirea domiciliului copilului, exercitarea autoritatii parintesti, pensie de intretinere cat si program de vizita. Partaj bunuri comune in fata instantelor de judecata cat si a tuturor autoritatilor/institutiilor publice.",
-        route: "/dreptul-familiei"
+        route: "/dreptul-familiei",
+        alt:"icon Drept Penal"
     },
     {
         id:3,
         name: "Drept Civil",
         icon: "/assets/images/svg/civil.png",
         description:"Asistență, consultanță și reprezentare juridică în toate ramurile dreptului civil, litigii între profesioniști, contracte, succesiuni, divorț, partaj, drepturi nepatrimoniale, drept societar.",
-        route: "/drept-civil"
+        route: "/drept-civil",
+        
     },
     {
         id:4,
         name: "Malpraxis Medical",
         icon: "/assets/images/svg/malpraxis.png",
         description:"Asistență juridică în fața Colegiului Medicilor, cât și pe durata unui eventual litigiu în fața instanțelor judecătorești",
-        route: "/malpraxis-medical"
+        route: "/malpraxis-medical",
+        
     },
     {
         id:5,
