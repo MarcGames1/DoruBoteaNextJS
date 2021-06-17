@@ -33,7 +33,8 @@ const Form = ()=>{
 
         axios.post('/api/contact',data, headers)
           .then((response) => {
-            console.log("Response Receved!");
+           alert("Va multumim, va vom contacta curand");
+           resetState()
             console.log(response)
           }, (error) => {
             console.log("Error! PLM!");
@@ -41,9 +42,10 @@ const Form = ()=>{
           });
 
         e.preventDefault()
-        console.log('Sending')
+        // e.reset()
+        console.log(e)
 
-        resetState()
+        
       }
 
  const resetState=()=>{
@@ -51,7 +53,7 @@ setName("")
 setEmail("")
 setPhone("")
 setGdpr("")
-setSubmitted(false)
+setSubmitted(true)
  }   
     return(
         <>
@@ -81,7 +83,9 @@ setSubmitted(false)
             <input required type="checkbox" name="gdpr" onChange={(e)=>{setGdpr(e.target.value)}}/>
         </fieldset>
         <button className="btn from-right" type="submit"
-         onClick={(e)=>{handleSubmit(e)}} > Trimiteti!</button>
+         onClick={(e)=>{handleSubmit(e)
+         document.querySelector("form").reset()
+         }} > Trimiteti!</button>
     </form>
 </main>
 </>

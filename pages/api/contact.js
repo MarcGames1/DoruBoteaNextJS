@@ -50,6 +50,6 @@ console.log(mailData)
         console.log(info)
         console.log("EMAIL SENT!!!!")
     })
-    //   FormularContact1! =>Parola
+   
     res.send("Success")
 }
