@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@material-ui/icons": "4.11.2",
+    "@netlify/plugin-nextjs": "^3.4.2",
     "@types/axios": "^0.14.0",
     "@types/bootstrap": "^5.0.16",
     "@types/dotenv": "^8.2.0",
