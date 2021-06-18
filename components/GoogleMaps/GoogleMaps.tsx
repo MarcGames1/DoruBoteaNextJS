@@ -38,7 +38,7 @@ assignGmap()
     </style>
     <main className="mapouter">
           <main className="gmap_canvas">
-            <iframe  className="gmap_iframe" width="100%" frameBorder="0" scrolling="no"
+            <iframe loading="lazy" className="gmap_iframe" width="100%" frameBorder="0" scrolling="no"
                   
                 src={gmap} ></iframe>
           </main>
