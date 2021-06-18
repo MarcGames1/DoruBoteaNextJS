@@ -1,16 +1,18 @@
 import React from 'react'
-import {WhatsApp} from '@material-ui/icons';
-import styles from './Navbar.module.css';
+import Whatsapp from './svgComponents/whatsapp'
+
 
 const WhatsappComponent = ()=>{
     return(
+        <>
+        <style global jsx>{` `}</style>
         <a className="d-flex flex-row text-decoration-none"  href="https://www.facebook.com/avocatdorubotea">
 
-        <WhatsApp className={styles.icon} />
+        <Whatsapp  />
         <div className="white text-center">
         </div>
         </a>
-        
+        </>
     )
 }
 

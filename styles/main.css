@@ -194,6 +194,8 @@ position: relative;
   min-height: 100vh;
 }
 
-/* .nav-link  {
-  color: var(--primary-font-color) !important;
-} */
+.icon{
+  color:var(--secondary-font-color) ;
+
+  height: 2em !important;
+}
