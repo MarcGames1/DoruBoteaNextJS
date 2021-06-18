@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import * as React from 'react'
 
-import { Phone } from '@material-ui/icons';
+import Phone  from '@material-ui/icons/Phone';
 import styles from './Navbar.module.css';
 
 const NavBarPhone = () => {

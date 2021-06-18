@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import {Facebook} from '@material-ui/icons';
+import Facebook from '@material-ui/icons/Facebook';
 import styles from './Navbar.module.css';
 const FacebookComponent = ()=>{
     return(

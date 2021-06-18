@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import {MailOutlineOutlined} from '@material-ui/icons';
+import MailOutlineOutlined from '@material-ui/icons/MailOutlineOutlined';
 import styles from './Navbar.module.css';
 const NavBarEmail = ()=>{
     return(
