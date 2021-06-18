@@ -1,11 +1,9 @@
 
     
-     .btn{
+     .btn1{
         text-transform: uppercase;
     }
-    .servicii-detalii p {
-        padding: 2em 2em 0em 2em;
-    }
+  
 p{
     text-align: left;
 
@@ -13,7 +11,8 @@ p{
 }
 
      .section-head{
-        /* word-spacing: 1.2rem; */
+        overflow-wrap: break-word;
+        hyphens: auto;
         line-height: 2em;
         font-family: var(--decorativeFont);
         padding: auto;
@@ -22,7 +21,7 @@ p{
         padding: 1em;
         width: 100%;
         height: 100%;
-        /* background-color:rgba(0, 0, 0, 0.7) !important; */
+        
     }
     .paragraphs ,#gdpr-label{
     display: flex;

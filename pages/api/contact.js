@@ -23,20 +23,23 @@ const mailData = {
     
     from: 'contact.avocat.dorubotea@gmail.com',
     to: 'george.marcu20@gmail.com',
-    subject: `[FORMULAR_CONTACT]${req.body.name} a completat formularul: `,
-    text:"Nume: " + req.body.name + "\n"+
-    "EMAIL: " + req.body.email + '\n'+
-    "TELEFON: "+ req.body.phone +"\n"+
-    "MESAJ: " +req.body.comments + "\n"+
-    "GDPR: " +req.body.gdpr,
-        html: `<div>NUME:${req.body.name}</div>
-        <h3>EMAIL: ${req.body.email}</h3>
-        <h3>TELEFON: ${req.body.phone}</h3>
-        <p>MESAJ: ${req.body.comments}</p>
-        <p>GDPR: ${req.body.gdpr}</p>`
+    subject: `[FORMULAR_CONTACT]${req.body.name.toString()} a completat formularul: `,
+    text:`NUME:${req.body.name.toString()}
+    EMAIL: ${req.body.email.toString()}
+    TELEFON: ${req.body.phone.toString()}
+    MESAJ: ${req.body.comments.toString()}
+    GDPR: ${req.body.gdpr.toString()}`,
+        html: `<div>
+        <p>NUME:${req.body.name.toString()}</p>
+        <p>EMAIL: ${req.body.email.toString()}</p>
+        <p>TELEFON: ${req.body.phone.toString()}</p>
+        <p>MESAJ: ${req.body.comments.toString()}</p>
+        <p>GDPR: ${req.body.gdpr.toString()}</p>
+        </div>
+        `
 }
 
-
+console.log("MAIL DATA IS /n===============================")
 console.log(mailData)
 
     

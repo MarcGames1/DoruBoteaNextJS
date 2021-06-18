@@ -13,39 +13,48 @@ const Form = ()=>{
     const [submitted, setSubmitted] = useState(false)
 
     const handleSubmit = (e) => {
-        console.log("sending!")
-        let data = {
-            name,
-            email,
-            comments,
-            phone,
-            gdpr,
-            submitted
-        }
+      
+      console.log("sending!")
+      let data = {
+        name,
+        email,
+        comments,
+        phone,
+        gdpr,
+        submitted
+      }
+      console.log("HANDLE SUBMIT MAI JOS E DATA")
+      console.log(data)
+      if(data.name && data.email && data.comments && data.phone && data.gdpr && data.submitted ==false){
         console.log("AICI SUNT DATELE")
         console.log(data)
         const headers = {
-            'Accept': 'application/json, text/plain, */*',
-      'content-type': 'application/json'
+          'Accept': 'application/json, text/plain, */*',
+          'content-type': 'application/json'
         }
-
         
-
+        
+        
         axios.post('/api/contact',data, headers)
-          .then((response) => {
-           alert("Va multumim, va vom contacta curand");
-           resetState()
-            console.log(response)
-          }, (error) => {
-            console.log("Error! PLM!");
-            console.log(error);
-          });
-
-        e.preventDefault()
-        // e.reset()
-        console.log(e)
-
+        .then((response) => {
+          alert("Va multumim, va vom contacta curand");
+          resetState()
+          console.log(response)
+        }, (error) => {
+          alert("Formularul nu s-a trimis!!!!");
+          console.log(error);
+        });
         
+        // e.preventDefault()
+        // e.reset()
+        console.log("HANDLE SUBMIT/n===========================================")
+        console.log(e)
+        
+        
+      } else{
+        console.log(data)
+        alert("eroare in IF")
+      }
       }
 
  const resetState=()=>{
@@ -53,20 +62,22 @@ setName("")
 setEmail("")
 setPhone("")
 setGdpr("")
-setSubmitted(true)
+setSubmitted(false)
  }   
     return(
         <>
         <main className="form-container" id="contact">
     <h2>Contact Rapid</h2>
-    <form action="/pages/success.html" method="post">
+    <form autoComplete="off"
+    //  action="/pages/success.html" 
+     method="post">
         <label htmlFor="nume">Nume</label>
 
-        <input required type="text" id="nume" name="nume" placeholder="Nume si Prenume" onChange={(e)=>{setName(e.target.value)}}/>
+        <input required type="text" id="nume" name="nume" placeholder="Nume si Prenume" onChange={(e)=>{setSubmitted(false), setName(e.target.value)}}/>
 
 
         <label htmlFor="email">Email</label>
-        <input required type="email" name="email" id="email" placeholder="Adresa de email" onChange={(e)=>{setEmail(e.target.value)}}/>
+        <input required type="email" name="email" id="email" placeholder="Adresa de email" onChange={(e)=>{setSubmitted(false), setEmail(e.target.value)}}/>
 
         <label htmlFor="phone">Telefon</label>
         <input required type="tel" name="phone" id="phone" pattern="[0-9]{10}" placeholder="Telefon" onChange={(e)=>{setPhone(e.target.value)}}/>

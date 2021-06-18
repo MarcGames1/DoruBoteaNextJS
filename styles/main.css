@@ -193,3 +193,7 @@ position: relative;
 .min-100-vh{
   min-height: 100vh;
 }
+
+/* .nav-link  {
+  color: var(--primary-font-color) !important;
+} */

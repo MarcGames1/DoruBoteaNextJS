@@ -11,7 +11,7 @@ const NavbarMid = () => {
     return (
         <div className="container-fluid">
 
-            <div className="d-sm-none d-md-none d-lg-flex justify-content-around align-content-center">
+            <div className="d-none d-md-flex justify-content-around align-content-center">
 
                 <NavBarBrand />
                 <NavBarEmail />

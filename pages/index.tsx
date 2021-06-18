@@ -142,6 +142,7 @@ body{
   }
 
   #servicii{
+    
     padding-bottom: 2em;
     display: flex;
     justify-content: space-around;
@@ -217,6 +218,8 @@ body{
     text-transform: uppercase;
   }
   .section-head, .section-title {
+    overflow-wrap: normal;
+
     display: block;
     text-align: center;
    color: var( --secondary-font-color);
@@ -233,7 +236,7 @@ body{
   .transparent-card {
    
     
-      background-color: rgba(0, 0, 0, 0.4);
+      background-color:transparent;
     
     }
 

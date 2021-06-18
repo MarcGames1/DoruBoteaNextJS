@@ -1,15 +1,15 @@
-button{
+/* button{
 	background-color: black;
 	display: inline-block;
 	font-weight: bold;
 	font-size: 1.5rem;
 	border-radius: 10px;
 	border: none;
-}
-.btn {		
+} */
+.btn1 {		
 	z-index: 2;
 	position: relative;	
-	padding: 1.4rem 4.2rem;
+	padding: 1.4rem 1rem;
 	/* padding-right: 3.1rem; */
 	/* font-size: 1.4rem; */
 	color: var(--primary-font-color);
@@ -21,24 +21,24 @@ button{
 	text-align: center;
 }
 
-.btn:before, .btn:after {
+.btn1:before, .btn1:after {
 	content: '';
 	position: absolute;	
 	transition: inherit;
 	z-index: -1;
 }
 
-.btn:hover {
+.btn1:hover {
 	color: var(--def);
 	/* transition-delay: .5s; */
 }
 
-.btn:hover:before {
+.btn1:hover:before {
 	
 	transition-delay: 0s;
 }
 
-.btn:hover:after {
+.btn1:hover:after {
 text-align: center;
 display: flex;
 flex-direction: row;
@@ -55,7 +55,7 @@ transition-delay: .35s;
 
 }
 
-.btn:hover:after .servicii{
+.btn1:hover:after .servicii{
 	content: 'aflati mai multe';
 	background: var(--secondary-font-color);
 	transition-delay: .35s;

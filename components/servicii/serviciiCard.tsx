@@ -11,7 +11,7 @@ export default function ServiciiCard ({icon, name, description, route}) {
                 <div className="content card-body" id={name}>
                    
                     <p className="paragraphs"> {description} </p>
-                        <a className="btn from-left d-block" href={route}>cititi mai mult</a>
+                        <a className="btn btn1 from-left d-block" href={route}>cititi mai mult</a>
                 </div>
             </div>
             </>
