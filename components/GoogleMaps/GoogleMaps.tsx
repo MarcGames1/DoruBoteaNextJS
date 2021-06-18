@@ -4,7 +4,7 @@ export default function GoogleMaps() {
 
   function assignGmap(){
     setTimeout(()=>
-    { gmap= "https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Strada Iuliu Maniu 47 Brașov 500091&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"}, 0);
+    { gmap= "https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Strada Iuliu Maniu 47 Brașov 500091&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"}, 1000);
     
   }
  
