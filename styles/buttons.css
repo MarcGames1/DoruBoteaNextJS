@@ -1,20 +1,10 @@
-/* button{
-	background-color: black;
-	display: inline-block;
-	font-weight: bold;
-	font-size: 1.5rem;
-	border-radius: 10px;
-	border: none;
-} */
+
 .btn1 {		
 	z-index: 2;
 	position: relative;	
 	padding: 1.4rem 1rem;
-	/* padding-right: 3.1rem; */
-	/* font-size: 1.4rem; */
 	color: var(--primary-font-color);
-	/* letter-spacing: 1.1rem; */
-	/* text-transform: uppercase; */
+
 	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
 	cursor: pointer;
 	user-select: none;
@@ -30,7 +20,6 @@
 
 .btn1:hover {
 	color: var(--def);
-	/* transition-delay: .5s; */
 }
 
 .btn1:hover:before {
@@ -49,7 +38,7 @@ text-transform: capitalize;
 font-size: 2em;
 
 
-/* content: 'aflati mai multe'; */
+
 background: var(--secondary-font-color);
 transition-delay: .35s;
 
@@ -62,7 +51,6 @@ transition-delay: .35s;
 	
 }
 
-/* From Top */
 
 .from-top:before, 
 .from-top:after {
@@ -88,7 +76,7 @@ transition-delay: .35s;
 	height: 100%;
 }
 
-/* From Left */
+
 
 .from-left:before, 
 .from-left:after {
@@ -113,7 +101,7 @@ transition-delay: .35s;
 	width: 100%;
 }
 
-/* From Right */
+
 
 .from-right:before, 
 .from-right:after {
@@ -138,7 +126,7 @@ transition-delay: .35s;
 	width: 100%;
 }
 
-/* From center */
+
 
 .from-center:before {
 	top: 0;
@@ -168,7 +156,7 @@ transition-delay: .35s;
 	height: 100%;
 }
 
-/* From Bottom */
+
 
 .from-bottom:before, 
 .from-bottom:after {
@@ -213,7 +201,7 @@ width: 48px;
 }
 
 .whatsapp-cta div a {
-	/* display: flex; */
+
 	flex-flow: column nowrap;
 	margin: auto;
 }

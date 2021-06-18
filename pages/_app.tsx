@@ -1,13 +1,12 @@
 
 // add bootstrap css 
 import 'bootstrap/dist/css/bootstrap.css'
-import { useRouter } from 'next/router';
-import { useState, useEffect } from 'react';
-import { Spinner } from 'react-bootstrap';
-import '../styles/main.css'
-import '../styles/typography.css'
-import '../styles/responsive.css';
-import Header from '../components/header/header'
+import '../styles/main.css' 
+
+import React, { useState, useEffect } from 'react';
+
+
+import Head from 'next/head'
 import Navbar from '../components/navbar/navbar';
 import Footer from '../components/Footer/footer';
 
@@ -19,7 +18,7 @@ function MyApp({ Component, pageProps }) {
 
       return(
     <>
-    <Header />
+    
     <Navbar />
     <Component {...pageProps}  />
      

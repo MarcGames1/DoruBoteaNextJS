@@ -10,7 +10,7 @@ import ServiciiContainer from '../components/servicii/servicii-container'
 
 export default function Home() {
 
-const title = "Avocat Brasov Doru" 
+const title = "Avocat Brasov Doru Botea" 
 const description = ""
 
   return (
