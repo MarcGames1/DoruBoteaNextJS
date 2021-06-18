@@ -31,7 +31,7 @@ function FirsSection(){
                     <span className="d-block mt-4 dinamic">{state}</span>
                 </h2>
 
-                <a className="main-cta btn btn1" href="#servicii">vedeti mai multe</a>
+                <a className="main-cta btn btn1 from-left" href="#servicii">vedeti mai multe</a>
 
             </div>
         </div>
