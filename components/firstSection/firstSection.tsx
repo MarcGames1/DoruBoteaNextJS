@@ -21,7 +21,7 @@ function FirsSection(){
     return(
         <section className="first-section" id="top">
         <div className="content">
-            <div className="appearFirstL">
+            <div>
 
                 
                 <h2 className="mb-4 hero-text">
