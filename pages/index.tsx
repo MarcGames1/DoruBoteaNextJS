@@ -1,21 +1,27 @@
 
-
+import Head from 'next/head'
 import {NextSeo} from 'next-seo'
-
 import FirstSection from '../components/firstSection/firstSection'
-
-import ConsultantaOnline from '../components/ConsultantaOnline/consultantaOnline'
 import ServiciiContainer from '../components/servicii/servicii-container'
+import ConsultantaOnline from '../components/ConsultantaOnline/consultantaOnline'
+
+
 
 
 export default function Home() {
 
 const title = "Avocat Brasov Doru Botea" 
 const description = ""
-
+const imageUrl = 'assets/images/background1.jpg'
   return (
     <>
-
+<Head> 
+  <link
+    rel="preload"
+    href={imageUrl}
+    as="image"
+  />
+</Head>
       <NextSeo title = {title} description ={description}/>
       
       <FirstSection />
