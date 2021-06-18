@@ -4,7 +4,16 @@ export default function GoogleMaps() {
 
  
 let gmap ="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Strada Iuliu Maniu 47 Brașov 500091&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-
+// let gmap = ""
+function load_iframes() {
+  var vidDefer = document.getElementsByTagName('iframe');
+  for (var i=0; i<vidDefer.length; i++) {
+  if(vidDefer[i].getAttribute('data-src')) {
+  vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
+  } } }
+        document.addEventListener("DOMContentLoaded", function(event) {
+           load_iframes();
+        });
   return(
     <>
     <style jsx>
@@ -31,7 +40,7 @@ let gmap ="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q
       }
       `}
     </style>
-    <main className="mapouter">
+    <main  className="mapouter" >
           <main className="gmap_canvas">
             <iframe loading="lazy" className="gmap_iframe" width="100%" frameBorder="0" scrolling="no"
                   
