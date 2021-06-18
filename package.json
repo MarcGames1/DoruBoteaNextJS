@@ -3,13 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    
-  "prestart": "next build",
-  "start": "next start -p ${PORT}",
-  
+    "prestart": "next build",
+    "start": "next start -p ${PORT}",
     "dev": "next dev",
     "build": "next build"
-    
   },
   "dependencies": {
     "@types/axios": "^0.14.0",
