@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from "react";
 
- const GmapIframe= (gmap, state) => {
+ const GmapIframe= (gmap) => {
 
-    const [loading, stillLoading] = useState(state)
-
-    useEffect(() => {  stillLoading(state) },[]);
+  
    
 
     return(
-      loading ? <></> : 
+  
       <iframe  
       className="gmap_iframe" 
       width="100%" 
