@@ -89,7 +89,7 @@ body{
   }
   
   .name{
-    color:var(--secondary-font-color)
+    color:var(--secondary-font-color);
   }
   .specializari{
     border-bottom: solid 2px var(--secondary-font-color);

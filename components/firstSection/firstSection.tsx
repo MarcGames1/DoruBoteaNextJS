@@ -1,3 +1,4 @@
+import React from "react";
 
 import { useState } from "react"
 
@@ -30,7 +31,7 @@ function FirsSection(){
                     <span className="my-4 d-block specializari ">Profesionalism si Incredere</span>
                     <span className="d-block mt-4 dinamic">{state}</span>
                 </h2>
-
+                
                 <a className="main-cta btn btn1 from-left" href="#servicii">vedeti mai multe</a>
 
             </div>
