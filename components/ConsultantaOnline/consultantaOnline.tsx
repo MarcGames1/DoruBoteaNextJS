@@ -168,7 +168,7 @@ fieldset label a:hover{
 </main>
 
 <Form/>
-{/* <GoogleMaps /> */}
+<GoogleMaps />
 </section>
         </>
     )

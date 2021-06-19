@@ -8,6 +8,7 @@ import React, { useEffect, useState } from "react";
     return(
   
       <iframe  
+      loading="lazy"
       className="gmap_iframe" 
       width="100%" 
       frameBorder="0" 
