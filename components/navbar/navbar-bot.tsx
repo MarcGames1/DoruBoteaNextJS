@@ -16,7 +16,7 @@ const NavBot = () => {
       <Nav className="ml-auto justify-content-between">
          <>
          <Navbar.Brand className="  d-lg-none d-md-none d-sm-block"  href="#home">
-             <img src="/assets/images/Phone-layout.png"  alt="logo+phone" />
+             <img src="/assets/images/Phone-layout.webp"  alt="logo+phone" />
          </Navbar.Brand>
          </>
         <Nav.Link href="/">Acasa</Nav.Link>

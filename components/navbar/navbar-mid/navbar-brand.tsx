@@ -8,7 +8,7 @@ const NavBarBrand = () => {
 
     return <Link href="/">
     <a>
-    <Image src='/assets/images/logo.png' objectFit="contain" layout="fixed"  width={60}
+    <Image src='/assets/images/logo.webp' objectFit="contain" layout="fixed"  width={60}
     height={60} />
     </a>
     </Link>
