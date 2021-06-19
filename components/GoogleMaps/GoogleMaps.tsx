@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import GmapIframe from "./gmapIframe";
 
 
 export default function GoogleMaps() {
+  const [loading, stillLoading] = useState(true)
+  const finishLoading = () => {
+      // alert('finished loading')
+      stillLoading(false)
+  }
+
+  useEffect(() => {
+    onload = finishLoading
+  
+  }, [])
+
   const gmap = "https://maps.google.com/maps?q=StradaI%20uliuManiu%2047%20Bra%C8%99ov%20500091&t=&z=15&ie=UTF8&iwloc=&output=embed"
   
   console.log(gmap)
@@ -35,9 +47,7 @@ export default function GoogleMaps() {
     </style>
     <main  className ="mapouter">
           <main className="gmap_canvas">
-            <iframe  className="gmap_iframe" width="100%" frameBorder="0" scrolling="no"
-                  
-                src={gmap} ></iframe>
+           <GmapIframe gmap={gmap} state={loading} />
           </main>
   
       </main>
