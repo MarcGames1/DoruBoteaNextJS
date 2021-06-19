@@ -85,14 +85,15 @@ footer{
   }
   
   
-  .site-footer .grid-container .grid-item .sso a img{
+  .site-footer .grid-container .grid-item .sso a div {
       transition: 0.3s ease-in;
+      /* transform: scale(1.5); */
   }
   
-  .site-footer .grid-container .grid-item .sso a:hover img {
+  .site-footer .grid-container .grid-item .sso a:hover div  {
       background: linear-gradient(45deg,var(--secondary-font-color),var(--secondary-font-color));
       -webkit-background-clip: text;
-      background-clip: inherit;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
       transform: scale(1.5);
   }
@@ -104,7 +105,7 @@ footer{
   }
   
   
-  .grid-item .sso img{
+  .grid-item .sso a div img{
     width: 100%;
     height: 100%;
   }

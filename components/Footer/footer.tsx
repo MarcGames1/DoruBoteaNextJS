@@ -1,8 +1,9 @@
 import * as React from 'react'
-// import styles from'./footer.css'
+import Image from 'next/image'
 
 
 const Footer = () => {
+    const iconSize = 1000
     return (
         <>
  
@@ -10,8 +11,22 @@ const Footer = () => {
     <main className = "container">
 
         <main className="grid-container">
-            <main className="grid-item">               
-                <img src = "../../assets/images/logo.webp" className = "logo-img"/>
+            <main className="grid-item">    
+            <div className="grid-item logo-img">
+
+                <Image 
+                    
+                    src = "/assets/images/logo.webp" 
+                    alt= "logo"
+                    layout="responsive"
+                    width={111}
+                    height={140}
+                    objectFit="contain"
+                    // objectPosition="left"
+                  
+                    />
+                    </div>
+                             
             </main>
 
 
@@ -28,10 +43,45 @@ const Footer = () => {
 
             <main className="grid-item">
                 <main className = "sso">
-                    <a href= "tel:0744312302"><img src="../../assets/images/icons/phone.png" className="circle-icon"/></a>
-                    <a href="https://wa.me/+40744312032"><img src="../../assets/images/icons/wa-mono.png" className="circle-icon"/></a>
-                    <a href= "https://www.facebook.com/avocatdorubotea"><img src="../../assets/images/icons/f.png" className="circle-icon"/></a>
-                    <a href= ""><img src="../../assets/images/icons/mail.png" className="circle-icon"/></a>
+                    
+                    <a href= "tel:0744312302">
+                   
+                    <Image 
+                    className="circle-icon"
+                    src="/assets/images/icons/phone.png" 
+                    layout="fill"
+                    objectFit="cover"
+                    
+                    />
+                    </a>
+                    
+                    
+
+                    
+                    
+                    <a href="https://wa.me/+40744312032">
+                        <Image 
+                    className="circle-icon"
+                    src="/assets/images/icons/wa-mono.png" 
+                    layout="fill"
+                    quality={100}
+                  
+                    objectFit="contain"
+                    /></a>
+                    <a href= "https://www.facebook.com/avocatdorubotea"><Image 
+                    className="circle-icon"
+                    src="/assets/images/icons/f.png"
+                    layout="fill"
+                   
+                    objectFit="contain" 
+                    /></a>
+                    <a href= ""><Image 
+                    className="circle-icon"
+                    src="/assets/images/icons/mail.png" 
+                    layout="fill"
+                 
+                    objectFit="contain"
+                    /></a>
                 </main>
             </main>   
         </main>

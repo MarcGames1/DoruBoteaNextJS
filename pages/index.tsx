@@ -12,16 +12,10 @@ export default function Home() {
 
 const title = "Avocat Brasov Doru Botea" 
 const description = ""
-const imageUrl = 'assets/images/background1.webp'
+
   return (
     <>
-<Head> 
-  <link
-    rel="preload"
-    href={imageUrl}
-    as="image"
-  />
-</Head>
+
       <NextSeo title = {title} description ={description}/>
       
       <FirstSection />
@@ -98,7 +92,7 @@ body{
     color:var(--secondary-font-color)
   }
   .specializari{
-    border-bottom: solid 1px var(--secondary-font-color);
+    border-bottom: solid 2px var(--secondary-font-color);
   }
 
 
