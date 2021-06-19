@@ -11,7 +11,7 @@ const Footer = () => {
 
         <main className="grid-container">
             <main className="grid-item">               
-                <img src = "../../assets/images/logo.png" className = "logo-img"/>
+                <img src = "../../assets/images/logo.webp" className = "logo-img"/>
             </main>
 
 

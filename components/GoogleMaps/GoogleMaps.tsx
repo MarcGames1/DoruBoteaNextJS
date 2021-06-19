@@ -5,9 +5,9 @@ import GmapIframe from "./gmapIframe";
 export default function GoogleMaps() {
   
 
-  const gmap = "https://maps.google.com/maps?q=StradaI%20uliuManiu%2047%20Bra%C8%99ov%20500091&t=&z=15&ie=UTF8&iwloc=&output=embed"
   
-  console.log(gmap)
+  
+  
  
 
   return(
@@ -38,7 +38,7 @@ export default function GoogleMaps() {
     </style>
     <main  className ="mapouter">
           <main className="gmap_canvas">
-           <GmapIframe gmap={gmap} />
+           <GmapIframe />
           </main>
   
       </main>

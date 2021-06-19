@@ -10,7 +10,7 @@ const ServiciiContainer =() => {
 
 <section className="servicii-detalii">
         <main className="h-10 ">
-        <BootStrapImage className="section-img" src="/assets/images/ServiciiBG.jpg"  fluid  />
+        <BootStrapImage className="section-img" src="/assets/images/ServiciiBG.webp"  fluid  />
         </main>
         <main className="section-title"></main>
         <h2>Servicii</h2>

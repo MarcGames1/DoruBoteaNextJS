@@ -12,7 +12,7 @@ export default function Home() {
 
 const title = "Avocat Brasov Doru Botea" 
 const description = ""
-const imageUrl = 'assets/images/background1.jpg'
+const imageUrl = 'assets/images/background1.webp'
   return (
     <>
 <Head> 
@@ -60,7 +60,7 @@ body{
   body, .first-section{
     background-blend-mode: darken;
     background-color: var(--transparent);
-    background-image: url("/assets/images/background1.jpg");
+    background-image: url("/assets/images/background1.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -122,7 +122,7 @@ body{
     align-items: center;
     justify-content:space-between;
     width: 100%;
-    background-image: url(/assets/images/section2\ background.jpg);
+    background-image: url(/assets/images/section2\ background.webp);
 
     background-position: center;
     background-size: cover;
