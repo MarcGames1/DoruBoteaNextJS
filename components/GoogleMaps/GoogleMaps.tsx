@@ -1,19 +1,12 @@
+import React from "react";
 
 
 export default function GoogleMaps() {
-
+  const gmap = "https://maps.google.com/maps?q=StradaI%20uliuManiu%2047%20Bra%C8%99ov%20500091&t=&z=15&ie=UTF8&iwloc=&output=embed"
+  
+  console.log(gmap)
  
-let gmap ="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Strada Iuliu Maniu 47 Brașov 500091&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-// let gmap = ""
-function load_iframes() {
-  var vidDefer = document.getElementsByTagName('iframe');
-  for (var i=0; i<vidDefer.length; i++) {
-  if(vidDefer[i].getAttribute('data-src')) {
-  vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
-  } } }
-        document.addEventListener("DOMContentLoaded", function(event) {
-           load_iframes();
-        });
+
   return(
     <>
     <style jsx>
@@ -40,9 +33,9 @@ function load_iframes() {
       }
       `}
     </style>
-    <main  className="mapouter" >
+    <main  className ="mapouter">
           <main className="gmap_canvas">
-            <iframe loading="lazy" className="gmap_iframe" width="100%" frameBorder="0" scrolling="no"
+            <iframe  className="gmap_iframe" width="100%" frameBorder="0" scrolling="no"
                   
                 src={gmap} ></iframe>
           </main>

@@ -206,15 +206,7 @@ body{
   
   .section-img{
     height: 40vh;
-    width: 100%;
-    text-transform: uppercase;
-    font-size: 2rem;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(/assets/images/ServiciiBG.jpg);
-    
-    position: relative;
+   
   }
 
 

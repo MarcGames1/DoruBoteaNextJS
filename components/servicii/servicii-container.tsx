@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import BootStrapImage from 'react-bootstrap/Image'
 import ServiciiWrapper from './servicii-wrapper'
 
 
@@ -8,7 +9,9 @@ const ServiciiContainer =() => {
     <>
 
 <section className="servicii-detalii">
-        <main className="section-img"></main>
+        <main className="h-10 ">
+        <BootStrapImage className="section-img" src="/assets/images/ServiciiBG.jpg"  fluid  />
+        </main>
         <main className="section-title"></main>
         <h2>Servicii</h2>
         <main className="h1-separator">
