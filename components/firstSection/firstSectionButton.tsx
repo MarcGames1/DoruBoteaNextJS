@@ -4,7 +4,7 @@ const FirstSectionButton = ()=>{
     
     return(
         <>
-        <a className="main-cta btn btn1 from-left" href="#servicii">vedeti mai multe</a>
+        <a className="main-cta btn btn-5 from-left" href="#servicii">vedeti mai multe</a>
 
         <style global jsx>{`
         .from-left:before, 
