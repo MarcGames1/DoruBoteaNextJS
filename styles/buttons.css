@@ -11,7 +11,7 @@
 	text-align: center;
 }
 
- .btn1:after {
+ .btn1:before {
 	content: '';
 	position: absolute;	
 	transition: inherit;
@@ -24,7 +24,7 @@
 
 
 
-.btn1:hover:after {
+.btn1:hover:before {
 text-align: center;
 display: flex;
 flex-direction: row;
@@ -41,7 +41,7 @@ transition-delay: .35s;
 
 }
 
-.btn1:hover:after .servicii{
+.btn1:hover:before .servicii{
 	content: 'aflati mai multe';
 	background: var(--secondary-font-color);
 	transition-delay: .35s;
@@ -49,58 +49,58 @@ transition-delay: .35s;
 }
 
 
-.from-top:after {
+.from-top:before {
 	left: 0;
 	height: 0;
 	width: 100%;
 }
 
 
-.from-top:after {
+.from-top:before {
 	top: 0;
 	height: 0;
 }
 
 
-.from-top:hover:after {
+.from-top:hover:before {
 	height: 100%;
 }
 
 
 
 
-.from-left:after {
+.from-left:before {
 	top: 0;
 	width: 0;
 	height: 100%;
 }
 
 
-.from-left:after {
+.from-left:before {
 	left: 0;
 }
 
 
-.from-left:hover:after {
+.from-left:hover:before {
 	width: 100%;
 }
 
 
 
 
-.from-right:after {
+.from-right:before {
 	top: 0;
 	width: 0;
 	height: 100%;
 }
 
 
-.from-right:after {
+.from-right:before {
 	right: 0;
 }
 
 
-.from-right:hover:after {
+.from-right:hover:before {
 	width: 100%;
 }
 
@@ -108,7 +108,7 @@ transition-delay: .35s;
 
 
 
-.from-center:after {
+.from-center:before {
 	bottom: 0;
 	left: 0;
 	height: 0;
@@ -121,7 +121,7 @@ transition-delay: .35s;
 	width: 100%;
 }
 
-.from-center:hover:after {
+.from-center:hover:before {
 	top: 0;
 	height: 100%;
 }
@@ -129,7 +129,7 @@ transition-delay: .35s;
 
 
 
-.from-bottom:after {
+.from-bottom:before {
 	left: 0;
 	height: 0;
 	width: 100%;
@@ -137,20 +137,20 @@ transition-delay: .35s;
 
 
 
-.from-bottom:after {
+.from-bottom:before {
 	bottom: 0;
 	height: 0;
 }
 
 
-.from-bottom:hover:after {
+.from-bottom:hover:before {
 	height: 100%;
 	width: 100%;
 }
 
 
 
-.from-center:hover::after{
+.from-center:hover::before{
 	content: '';
 
 }
