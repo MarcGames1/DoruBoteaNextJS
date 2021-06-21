@@ -1,6 +1,7 @@
 import React from "react";
 
 import { useState } from "react"
+import FirstSectionButton from "./firstSectionButton";
 
 let currentText =""
 let index = 0;
@@ -32,7 +33,7 @@ function FirsSection(){
                     <span className="d-block mt-4 dinamic">{state}</span>
                 </h2>
                 
-                <a className="main-cta btn btn1 from-left" href="#servicii">vedeti mai multe</a>
+               <FirstSectionButton />
 
             </div>
         </div>
