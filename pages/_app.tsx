@@ -1,8 +1,7 @@
 
 // add bootstrap css 
 import 'bootstrap/dist/css/bootstrap.css'
-import '../styles/main.css' 
-
+import '../styles/main.css'
 import React, { useState, useEffect } from 'react';
 
 
