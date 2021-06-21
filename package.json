@@ -6,7 +6,7 @@
     "prestart": "next build",
     "start": "next start -p ${PORT}",
     "dev": "next dev",
-    "build": "next build && next export"
+    "build": "next build"
   },
   "dependencies": {
     "@types/axios": "^0.14.0",
