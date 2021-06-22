@@ -61,7 +61,7 @@ const Footer = () => {
                     <a href="https://wa.me/+40744312032">
                         <Image 
                     className="circle-icon"
-                    src="/assets/images/icons/wa-mono.png" 
+                    src="/assets/images/icons/w.png" 
                     layout="fill"
                     quality={100}
                   
