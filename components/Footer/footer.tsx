@@ -6,7 +6,6 @@ const Footer = () => {
     const iconSize = 1000
     return (
         <>
- 
 <footer className="site-footer">
     <main className = "container">
 
@@ -91,6 +90,9 @@ const Footer = () => {
 
     </main>
 </footer>
+
+
+
         </>
     )
 }

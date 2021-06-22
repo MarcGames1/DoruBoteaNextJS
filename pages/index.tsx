@@ -19,12 +19,14 @@ const description = ""
       <NextSeo title = {title} description ={description}/>
       
       <FirstSection />
+      
       <ServiciiContainer />
       <ConsultantaOnline />
       
       
+      
 
-<style global jsx>{`
+<style global jsx>{` 
 
 
 
@@ -219,10 +221,7 @@ body{
   }
 
 
-  .mapouter{
-    grid-column: 1 / 4;
-    grid-row: 2 / 3;
-  }
+
 
   
   .transparent-card {

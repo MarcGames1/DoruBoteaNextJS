@@ -36,3 +36,7 @@
 .white{
   color:white;
 }
+
+.bg-black-t{
+  background-color: var(--transparent);
+}

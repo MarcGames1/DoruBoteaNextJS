@@ -1,14 +1,14 @@
 /* @import url(navBar.css); */
 @import url("https://fonts.googleapis.com/css?family=Tangerine");
 @import url(variables.css);
-
-@import url(consultantaOnline.css);
-@import url(form.css);
 @import url(map.css);
 @import url(icons.css);
 @import url(keyframes.css);
 @import url(typography.css);
 @import url(footer.css);
+
+
+
 
 *, *:before, *:after {
 	box-sizing: border-box;
@@ -44,14 +44,14 @@ html{
   
   position: fixed;
   z-index: -2;
-  /* background-image: url('../assets/images/background1.jpg'), url('../assets/images/background2.jpg'),url('../assets/images/background3.jpg'); */
+ 
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-attachment: scroll; */
   background-position: center;
-  
-  
 }
+ 
+  
+  
 
 
 
