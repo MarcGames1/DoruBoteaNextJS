@@ -49,7 +49,8 @@ const Footer = () => {
                     className="circle-icon"
                     src="/assets/images/icons/phone.svg" 
                     layout="fill"
-                    objectFit="cover"
+                    objectFit="contain"
+                    quality={100}
                     
                     />
                     </a>
