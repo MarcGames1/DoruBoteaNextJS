@@ -47,7 +47,7 @@ const Footer = () => {
                    
                     <Image 
                     className="circle-icon"
-                    src="/assets/images/icons/phone.png" 
+                    src="/assets/images/icons/phone.svg" 
                     layout="fill"
                     objectFit="cover"
                     
@@ -61,7 +61,7 @@ const Footer = () => {
                     <a href="https://wa.me/+40744312032">
                         <Image 
                     className="circle-icon"
-                    src="/assets/images/icons/w.png" 
+                    src="/assets/images/icons/w.svg" 
                     layout="fill"
                     quality={100}
                   
@@ -69,14 +69,14 @@ const Footer = () => {
                     /></a>
                     <a href= "https://www.facebook.com/avocatdorubotea"><Image 
                     className="circle-icon"
-                    src="/assets/images/icons/f.png"
+                    src="/assets/images/icons/f.svg"
                     layout="fill"
                    
                     objectFit="contain" 
                     /></a>
                     <a href= ""><Image 
                     className="circle-icon"
-                    src="/assets/images/icons/mail.png" 
+                    src="/assets/images/icons/mail.svg" 
                     layout="fill"
                  
                     objectFit="contain"
