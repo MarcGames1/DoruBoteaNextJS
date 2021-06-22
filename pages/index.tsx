@@ -206,7 +206,7 @@ body{
 
   .section-title{
     margin-top: 1.5rem;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
   }
   .section-head, .section-title {

@@ -1,30 +1,52 @@
+import React from "react";
 
-.btn1 {		
+const FirstSectionButton = (props)=>{
+    
+    return(
+        <>
+        <a className={'btn from-left' +" "+ props.class} href={props.href}>{props.text}</a>
+
+        <style  jsx>{`
+        button{
+	background-color: black;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 1.5rem;
+	border-radius: 10px;
+	border: none;
+}
+.btn {		
 	z-index: 2;
 	position: relative;	
-	padding: 1.4rem 1rem;
+	padding: 1.4rem 4.2rem;
+	
+	
 	color: var(--primary-font-color);
-
+	
 	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
 	cursor: pointer;
 	user-select: none;
 	text-align: center;
 }
 
- .btn1:before {
+.btn:before, .btn:after {
 	content: '';
 	position: absolute;	
 	transition: inherit;
 	z-index: -1;
 }
 
-.btn1:hover {
+.btn:hover {
 	color: var(--def);
+	
 }
 
+.btn:hover:before {
+	
+	transition-delay: 0s;
+}
 
-
-.btn1:hover:before {
+.btn:hover:after {
 text-align: center;
 display: flex;
 flex-direction: row;
@@ -41,7 +63,7 @@ transition-delay: .35s;
 
 }
 
-.btn1:hover:before .servicii{
+.btn:hover:after .servicii{
 	content: 'aflati mai multe';
 	background: var(--secondary-font-color);
 	transition-delay: .35s;
@@ -49,66 +71,92 @@ transition-delay: .35s;
 }
 
 
-.from-top:before {
+
+.from-top:before, 
+.from-top:after {
 	left: 0;
 	height: 0;
 	width: 100%;
 }
 
-
 .from-top:before {
+	bottom: 0;	
+	border: 1px solid var(--secondary-font-color);
+	border-top: 0;
+	border-bottom: 0;
+}
+
+.from-top:after {
 	top: 0;
 	height: 0;
 }
 
-
-.from-top:hover:before {
+.from-top:hover:before,
+.from-top:hover:after {
 	height: 100%;
 }
 
 
-
-
-.from-left:before {
+.from-left:before, 
+.from-left:after {
 	top: 0;
 	width: 0;
 	height: 100%;
 }
 
-
 .from-left:before {
+	right: 0;
+	border: 1px solid var(--secondary-font-color);
+	border-left: 0;
+	border-right: 0;	
+}
+
+.from-left:after {
 	left: 0;
 }
 
-
-.from-left:hover {
-	background-color: var(--secondary-font-color);
+.from-left:hover:before,
+.from-left:hover:after {
+	width: 100%;
 }
 
 
-
-
-.from-right:before {
+.from-right:before, 
+.from-right:after {
 	top: 0;
 	width: 0;
 	height: 100%;
 }
 
-
 .from-right:before {
+	left: 0;
+	border: 1px solid var(--secondary-font-color);
+	border-left: 0;
+	border-right: 0;	
+}
+
+.from-right:after {
 	right: 0;
 }
 
-
-.from-right:hover:before {
+.from-right:hover:before,
+.from-right:hover:after {
 	width: 100%;
 }
 
-
-
-
+/* From center */
 
 .from-center:before {
+	top: 0;
+	left: 50%;
+	height: 100%;
+	width: 0;
+	border: 3px solid var(--secondary-font-color);
+	border-left: 0;
+	border-right: 0;
+}
+
+.from-center:after {
 	bottom: 0;
 	left: 0;
 	height: 0;
@@ -121,36 +169,41 @@ transition-delay: .35s;
 	width: 100%;
 }
 
-.from-center:hover:before {
+.from-center:hover:after {
 	top: 0;
 	height: 100%;
 }
 
+/* From Bottom */
 
-
-
-.from-bottom:before {
+.from-bottom:before, 
+.from-bottom:after {
 	left: 0;
 	height: 0;
 	width: 100%;
 }
 
-
-
 .from-bottom:before {
+	top: 0;	
+	border: 3px solid var(--secondary-font-color);
+	border-top: 0;
+	border-bottom: 0;
+}
+
+.from-bottom:after {
 	bottom: 0;
 	height: 0;
 }
 
-
-.from-bottom:hover:before {
+.from-bottom:hover:before,
+.from-bottom:hover:after {
 	height: 100%;
 	width: 100%;
 }
 
 
-
-.from-center:hover::before{
+.from-center:hover::before,
+.from-center:hover::after{
 	content: '';
 
 }
@@ -166,7 +219,7 @@ width: 48px;
 }
 
 .whatsapp-cta div a {
-
+	
 	flex-flow: column nowrap;
 	margin: auto;
 }
@@ -198,20 +251,10 @@ width: 48px;
 .buttonTop:hover img{
 	transform: scale(1.3);
 }
-.btn-5 {
-	border: 0 solid;
-	box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
-	outline: 1px solid;
-	outline-color: rgba(255, 255, 255, 0.5);
-	outline-offset: 0px;
-	text-shadow: none;
-	transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-  }
-  
-  .btn-5:hover {
-	border: 1px solid;
-	box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
-	outline-color: rgba(255, 255, 255, 0);
-	outline-offset: 15px;
-	text-shadow: 1px 1px 2px #427388;
-  }
+}
+             `}</style>
+        </>
+    )
+}
+
+export default FirstSectionButton
