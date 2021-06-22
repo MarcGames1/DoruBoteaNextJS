@@ -46,7 +46,8 @@ const FirstSectionButton = (props)=>{
 	transition-delay: 0s;
 }
 
-.btn:hover:after {
+.btn:hover:after,
+.btn:hover:before {
 text-align: center;
 display: flex;
 flex-direction: row;

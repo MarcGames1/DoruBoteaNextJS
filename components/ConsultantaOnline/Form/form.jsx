@@ -67,7 +67,7 @@ setSubmitted(false)
     return(
         <>
         <main className="form-container" id="contact">
-    <h2>Contact Rapid</h2>
+    <h3>Contact Rapid</h3>
     <form autoComplete="off"
     //  action="/pages/success.html" 
      method="post">
