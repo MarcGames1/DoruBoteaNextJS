@@ -1,7 +1,28 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import React, { ReactElement } from "react";
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
-export default function MyDocument () {
+
+export default class MyDocument extends Document {
   
+  static async getInitialProps(ctx) {
+   
+    const originalRenderPage = ctx.renderPage;
+
+    try {
+      ctx.renderPage = () =>
+      originalRenderPage({
+        enhanceApp: (App) => (props) =>
+         <App {...props} />,
+      });
+
+      const initialProps = await Document.getInitialProps(ctx);
+      return {...initialProps};
+    } finally {
+     
+    }
+  }
+
+  render(): ReactElement {
     return (
       <Html lang='ro_RO'>
         <Head>
@@ -28,6 +49,6 @@ export default function MyDocument () {
           <NextScript />
         </body>
       </Html>
-    )
-  
+   );
+  }
 }
