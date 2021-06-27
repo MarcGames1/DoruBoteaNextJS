@@ -1,6 +1,7 @@
+import React from 'react'
 import { useState } from 'react'
 import axios from 'axios'
-
+import { Button, Modal } from 'react-bootstrap'
 
 
 
@@ -11,6 +12,10 @@ const Form = ()=>{
     const [phone, setPhone] =  useState('')
     const [gdpr, setGdpr]=useState(false)
     const [submitted, setSubmitted] = useState(false)
+    const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
     const handleSubmit = (e) => {
       
@@ -66,6 +71,18 @@ setSubmitted(false)
  }   
     return(
         <>
+        <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+            <Modal.Title>GDPR</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Datele transmise in formular vor fi folosite strict pentru comunicarea intre avocat si client</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Inchideti
+          </Button>
+
+        </Modal.Footer>
+      </Modal>
         <main className="form-container" id="contact">
     <h3>Contact Rapid</h3>
     <form autoComplete="off"
@@ -89,7 +106,7 @@ setSubmitted(false)
 
 
         <fieldset>
-            <label id="gdpr-label" htmlFor="gdpr"><a href="/pages/gdpr.html">Sunt de acord cu politica de prelucrare
+            <label id="gdpr-label" htmlFor="gdpr"><a  onClick={handleShow}>Sunt de acord cu politica de prelucrare
                     a datelor</a></label>
             <input required type="checkbox" name="gdpr" onChange={(e)=>{setGdpr(e.target.value)}}/>
         </fieldset>
