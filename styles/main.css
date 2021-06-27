@@ -201,3 +201,6 @@ position: relative;
 }
 
 
+.navbar-toggler{
+  float: right !important;
+}
