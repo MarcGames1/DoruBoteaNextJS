@@ -3,7 +3,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 export default function MyDocument () {
   
     return (
-      <Html>
+      <Html lang='ro_RO'>
         <Head>
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script

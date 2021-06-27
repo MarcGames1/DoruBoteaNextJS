@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "pages/__document.js"  ],
   "exclude": [
     "node_modules"
   ]
