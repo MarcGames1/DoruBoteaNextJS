@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import Mail from './svgComponents/mail';
+import Mail from '../../svgComponents/mail';
 
 const NavBarEmail = ()=>{
     return(

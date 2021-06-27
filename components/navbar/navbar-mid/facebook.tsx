@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Facebook from './svgComponents/facebook'
+import Facebook from '../../svgComponents/facebook'
 
 
 const FacebookComponent = ()=>{

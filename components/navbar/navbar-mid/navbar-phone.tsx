@@ -4,7 +4,7 @@ import * as React from 'react'
 
 
 
-import Phone from './svgComponents/phone';
+import Phone from '../../svgComponents/phone';
 
 const NavBarPhone = () => {
     return (

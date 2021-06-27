@@ -1,5 +1,5 @@
 import React from 'react'
-import Whatsapp from './svgComponents/whatsapp'
+import Whatsapp from '../../svgComponents/whatsapp'
 
 
 const WhatsappComponent = ()=>{
