@@ -12,7 +12,7 @@ const NavBot = () => {
     <Navbar.Toggle className="mr-auto  align-self-end "  aria-controls="basic-navbar-nav"  />
     <Navbar.Collapse id="basic-navbar-nav">
         
-        <Nav className="justify-content-between">
+        <Nav className="mx-auto justify-self-evenly">
            <>
            <Navbar.Brand className="  my-2 d-lg-none d-md-none d-sm-block"  href="#home">
                <Image src="/assets/images/Phone-layout.webp"  alt="logo+phone" width={300} height={50} layout='responsive' />
