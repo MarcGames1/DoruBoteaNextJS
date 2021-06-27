@@ -80,7 +80,7 @@ const Footer = () => {
                 </path>
             </svg>
                     </a>
-                    <a href= "">
+                    <a href= "mailto:avocat.dorubotea@gmail.com">
                     <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="envelope"
                     className="circle-icon svg-inline--fa fa-envelope fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512">
