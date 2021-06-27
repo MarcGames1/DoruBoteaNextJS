@@ -1,4 +1,4 @@
-
+import { AppProps } from 'next/app'
 // add bootstrap css 
 import 'bootstrap/dist/css/bootstrap.css'
 import '../styles/main.css'
@@ -16,7 +16,7 @@ import Footer from '../components/Footer/footer';
 // <Component {...pageProps}  />
 // <Spinner  animation="border" variant="secondary" />
 
-function MyApp({ Component, pageProps }) {
+const MyApp=({ Component, pageProps }:AppProps) =>{
   const router = useRouter()
 
   useEffect(() => {
@@ -34,7 +34,17 @@ function MyApp({ Component, pageProps }) {
     }
   }, [router.events])
 
-  return <Component {...pageProps} />
+  return  <>
+  <Head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href="/favicon.png" key="shortcutIcon" />
+    <link rel="manifest" href="/manifest.json" />
+    </Head>    
+  <Component {...pageProps} />
+</>
 }
 
 export default MyApp
