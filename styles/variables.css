@@ -62,7 +62,9 @@
 .white{
   color:white;
 }
-
+.bg-black{
+  background-color: #000000;
+}
 .bg-black-t{
   background-color: var(--transparent);
 }

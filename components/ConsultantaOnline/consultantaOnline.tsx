@@ -6,7 +6,7 @@ const ConsultantaOnline = ()=>{
     return(
         <>
   
-        <div className=" text-white bg-black-t container-fluid">
+<div className=" text-white bg-black-t container-fluid">
 
     <br />
 <div className="row">

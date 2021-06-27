@@ -1,0 +1,8 @@
+@import "/css/secondaryPages.css";
+:root{
+    --background_image: url(./contraventional.png);
+}
+
+.parallax{
+    background-image: url('./contraventional.png');
+}

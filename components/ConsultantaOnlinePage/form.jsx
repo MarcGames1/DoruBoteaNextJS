@@ -5,11 +5,13 @@ import { Button, Modal } from 'react-bootstrap'
 
 
 
-const Form = ()=>{
+function ConsultantaForm () {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [comments, setComments] = useState('')
     const [phone, setPhone] =  useState('')
+    const [speta, setSpeta] =  useState('')
+    const [ore, setOre] =  useState(0)
     const [gdpr, setGdpr]=useState(false)
     const [submitted, setSubmitted] = useState(false)
     const [show, setShow] = useState(false);
@@ -26,7 +28,9 @@ const Form = ()=>{
         comments,
         phone,
         gdpr,
-        submitted
+        submitted,
+        speta,
+        ore
       }
       console.log("HANDLE SUBMIT MAI JOS E DATA")
       console.log(data)
@@ -40,7 +44,7 @@ const Form = ()=>{
         
         
         
-        axios.post('/api/contact',data, headers)
+        axios.post('/api/consultantaonline',data, headers)
         .then((response) => {
           alert("Va multumim, va vom contacta curand");
           resetState()
@@ -58,7 +62,7 @@ const Form = ()=>{
         
       } else{
         console.log(data)
-        alert("eroare in IF")
+        alert("A intervenit o eroare! va rugam sa completati toate campurile daca ati facut-o, apasati F5 si mai completati odata formularul Va multumim")
       }
       }
 
@@ -67,6 +71,8 @@ setName("")
 setEmail("")
 setPhone("")
 setGdpr("")
+setOre(0)
+setSpeta('')
 setSubmitted(false)
  }   
     return(
@@ -83,10 +89,10 @@ setSubmitted(false)
 
         </Modal.Footer>
       </Modal>
-        <main className="form-container" id="contact">
-    <h3>Contact Rapid</h3>
+        <main className="form-container container" id="contact">
+    <h3>completeaza formularul si programeaza acum sedinta de consultanta online</h3>
     <form autoComplete="off"
-    //  action="/pages/success.html" 
+     
      method="post">
         <label htmlFor="nume">Nume</label>
 
@@ -98,6 +104,21 @@ setSubmitted(false)
 
         <label htmlFor="phone">Telefon</label>
         <input required type="tel" name="phone" id="phone" pattern="[0-9]{10}" placeholder="Telefon" onChange={(e)=>{setPhone(e.target.value)}}/>
+        <label htmlFor="speta">Speta</label>
+                    <select required id="speta" name="speta"  onChange={(e)=>{setSpeta(e.target.value)}}>
+                        <option value="Drept Penal">Drept Penal</option>
+                        <option value="Dreptul Familiei">Dreptul Familiei</option>
+                        <option value="Drept Civil">Drept Civil</option>
+                        <option value="Malpraxis Medical">Malpraxis Medical</option>
+                        <option value="Dreptul Muncii">Dreptul Muncii</option>
+                        <option value="Executari Silite">Executari Silite</option>
+                    </select>
+                    <label htmlFor="ore de consultanta"></label>
+                    <input type="range" id="ore de consultanta " step='1' onChange={(e)=>{setOre(parseInt(e.target.value))}} name="Ore de Consultanta"
+                        min="1" max="10" value={ore} />
+                    <p className='primary h4'>Ore De Consultanta selectate:{ore}</p>
+
+   
         <textarea required name="comments" id="comments" rows="10" placeholder="Descrieti Cauza" onChange={(e)=>{setComments(e.target.value)}} />
 
 
@@ -264,4 +285,4 @@ input[type = button]{
     )
 }
 
-export default Form
+export default ConsultantaForm

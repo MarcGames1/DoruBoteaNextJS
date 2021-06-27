@@ -1,0 +1,17 @@
+@import "/css/secondaryPages.css";
+
+.categorie h2{
+    display: block;
+    padding: 2em 0;
+}
+.categorie strong{
+    display: block;
+    margin: 2em 0;
+}
+.parallax{
+    background-image: url('./Executari.jpg');
+}
+
+.text p{
+    margin: 1rem 0rem;
+}
