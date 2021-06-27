@@ -3,6 +3,7 @@ import { AppProps } from 'next/app'
 import 'bootstrap/dist/css/bootstrap.css'
 import '../styles/main.css'
 import React, { useState, useEffect } from 'react';
+import TagManager from 'react-gtm-module';
 
 import { useRouter } from 'next/router'
 
@@ -22,6 +23,7 @@ const MyApp=({ Component, pageProps }:AppProps) =>{
   useEffect(() => {
     const handleRouteChange = (url) => {
       ga.pageview(url)
+
     }
     //When the component is mounted, subscribe to router changes
     //and log those page views
@@ -33,6 +35,10 @@ const MyApp=({ Component, pageProps }:AppProps) =>{
       router.events.off('routeChangeComplete', handleRouteChange)
     }
   }, [router.events])
+
+  useEffect(() => {
+    TagManager.initialize({ gtmId: 'GTM-P4QDK6G' });
+  }, []);
 
   return  <>
   <Head>
