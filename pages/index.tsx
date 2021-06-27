@@ -1,11 +1,8 @@
 
-import Head from 'next/head'
 import {NextSeo} from 'next-seo'
 import FirstSection from '../components/firstSection/firstSection'
 import ServiciiContainer from '../components/servicii/servicii-container'
 import ConsultantaOnline from '../components/ConsultantaOnline/consultantaOnline'
-import Navbar from '../components/navbar/navbar'
-import Footer from '../components/Footer/footer'
 
 
 const img ="/assets/images/background1.webp"

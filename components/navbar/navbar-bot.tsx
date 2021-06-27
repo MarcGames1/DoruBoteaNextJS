@@ -10,24 +10,25 @@ const NavBot = () => {
   <Container  >
    <Container fluid>
     <Navbar.Toggle className="mr-auto  align-self-end "  aria-controls="basic-navbar-nav"  />
-    </Container>
     <Navbar.Collapse id="basic-navbar-nav">
         
-      <Nav className="justify-content-between">
-         <>
-         <Navbar.Brand className="  my-2 d-lg-none d-md-none d-sm-block"  href="#home">
-             <Image src="/assets/images/Phone-layout.webp"  alt="logo+phone" width={300} height={50} layout='responsive' />
-            
-         </Navbar.Brand>
-         </>
-        <Nav.Link className='align-self-center' href="/">Acasa</Nav.Link>
-        <Nav.Link className='align-self-center' href="#servicii">Servicii</Nav.Link>
-        <Nav.Link className='align-self-center' href="/consultanta-online">Consultanta Online</Nav.Link>
-        <Nav.Link className='align-self-center' href="/blog">Blog</Nav.Link>
-        <Nav.Link className='align-self-center' href="/contact">Contact</Nav.Link>
-      </Nav>
+        <Nav className="justify-content-between">
+           <>
+           <Navbar.Brand className="  my-2 d-lg-none d-md-none d-sm-block"  href="#home">
+               <Image src="/assets/images/Phone-layout.webp"  alt="logo+phone" width={300} height={50} layout='responsive' />
+              
+           </Navbar.Brand>
+           </>
+          <Nav.Link className='align-self-center' href="/">Acasa</Nav.Link>
+          <Nav.Link className='align-self-center' href="#servicii">Servicii</Nav.Link>
+          <Nav.Link className='align-self-center' href="/consultanta-online">Consultanta Online</Nav.Link>
+          <Nav.Link className='align-self-center' href="/blog">Blog</Nav.Link>
+          <Nav.Link className='align-self-center' href="/contact">Contact</Nav.Link>
+        </Nav>
+   
+      </Navbar.Collapse>
+    </Container>
  
-    </Navbar.Collapse>
   </Container>
 </Navbar>
         </>
