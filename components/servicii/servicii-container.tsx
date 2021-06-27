@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import BootStrapImage from 'react-bootstrap/Image'
+
 import ServiciiWrapper from './servicii-wrapper'
 
 
@@ -10,7 +10,7 @@ const ServiciiContainer =() => {
 
 <section className="servicii-detalii">
         <main className="h-10 ">
-        <BootStrapImage className="section-img" src="/assets/images/ServiciiBG.webp"  fluid  />
+        <Image className="section-img img-fluid" src="/assets/images/ServiciiBG.webp" alt='image' width={1920} height={773} loading='lazy' layout='intrinsic' objectFit='contain'/>
         </main>
         <main className="section-title"></main>
         <h2 className="h1 section-title">Servicii</h2>

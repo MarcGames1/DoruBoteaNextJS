@@ -8,7 +8,7 @@
 @import url(footer.css);
 
 
-
+.row:before, .row:after {display: none;}
 
 *, *:before, *:after {
 	box-sizing: border-box;

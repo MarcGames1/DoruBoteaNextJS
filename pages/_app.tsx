@@ -64,7 +64,9 @@ const MyApp=({ Component, pageProps }:AppProps) =>{
           }}
         />
     </Head>    
+    <Navbar/>
   <Component {...pageProps} />
+  <Footer />
 </>
 }
 

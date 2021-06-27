@@ -4,8 +4,11 @@ import {NextSeo} from 'next-seo'
 import FirstSection from '../components/firstSection/firstSection'
 import ServiciiContainer from '../components/servicii/servicii-container'
 import ConsultantaOnline from '../components/ConsultantaOnline/consultantaOnline'
+import Navbar from '../components/navbar/navbar'
+import Footer from '../components/Footer/footer'
 
 
+const img ="/assets/images/background1.webp"
 
 
 export default function Home() {
@@ -56,7 +59,7 @@ body{
   body, .first-section{
     background-blend-mode: darken;
     background-color: var(--transparent);
-    background-image: url("/assets/images/background1.webp");
+    background-image: url(${img});
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
