@@ -101,12 +101,12 @@ body{
   .hero-text{
     padding-bottom: 2rem;
   }
-  .main-cta{
+  {/* .main-cta{
     letter-spacing: 1.1rem;
-  }
+  } */}
     
   
-  
+
   
   
   

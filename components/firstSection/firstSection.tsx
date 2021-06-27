@@ -37,8 +37,19 @@ function FirsSection(){
 
             </div>
         </div>
-
+<style global jsx>
+    {`
+    @media (min-width: 992px) { 
+    .main-cta{
+      letter-spacing: 1.1rem;
+    }
+   }
+    `}
+   
+    
+</style>
     </section>  
+    
       )
 }
 
