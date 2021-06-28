@@ -1,6 +1,6 @@
 @import 'main.css';
 html{  
-    background-color: black;
+    background-color: black !important;
 }
 header, section{
     margin:auto

@@ -69,7 +69,7 @@ html{
 section{
   color: var(--primary-font-color);
  /* min-height: 100vh; */
-  max-width: 96vw !important;
+  /* max-width: 96vw !important; */
   margin-left: auto;
 }
   
