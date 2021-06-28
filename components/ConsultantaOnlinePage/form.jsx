@@ -112,6 +112,7 @@ setSubmitted(false)
                         <option value="Malpraxis Medical">Malpraxis Medical</option>
                         <option value="Dreptul Muncii">Dreptul Muncii</option>
                         <option value="Executari Silite">Executari Silite</option>
+                
                     </select>
                     <label htmlFor="ore de consultanta"></label>
                     <input type="range" id="ore de consultanta " step='1' onChange={(e)=>{setOre(parseInt(e.target.value))}} name="Ore de Consultanta"

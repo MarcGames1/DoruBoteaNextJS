@@ -27,12 +27,16 @@ const mailData = {
     text:`NUME:${req.body.name.toString()}
     EMAIL: ${req.body.email.toString()}
     TELEFON: ${req.body.phone.toString()}
+    SPETA: ${req.body.speta.toString()}
+    ORE_DE_CONSULTANTA: ${req.body.ore.toString()}
     MESAJ: ${req.body.comments.toString()}
     GDPR: ${req.body.gdpr.toString()}`,
         html: `<div>
         <p>NUME:${req.body.name.toString()}</p>
         <p>EMAIL: ${req.body.email.toString()}</p>
         <p>TELEFON: ${req.body.phone.toString()}</p>
+        <p>SPETA: ${req.body.speta.toString()}</p>
+        <p>Ore de Consultanta: ${req.body.ore.toString()}</p>
         <p>MESAJ: ${req.body.comments.toString()}</p>
         <p>GDPR: ${req.body.gdpr.toString()}</p>
         </div>
