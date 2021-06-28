@@ -1,5 +1,4 @@
 import React from "react";
-import styles from 'Navbar.module.css';
 const Facebook = ()=>{
 
     return(<>
@@ -11,13 +10,7 @@ const Facebook = ()=>{
                             </path>
                         </svg>
 
-<style global jsx>{`
-    .icon{
-        color:var(--secondary-font-color);
-    
-        heigth: 2em !important;
-    }
-`}</style>
+        
     </>)
 }
 

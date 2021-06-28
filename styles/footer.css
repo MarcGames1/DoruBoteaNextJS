@@ -96,6 +96,7 @@ footer{
       background-clip: text;
       -webkit-text-fill-color: transparent;
       transform: scale(1.5);
+      border-radius: 50%;
   }
   
   .circle-icon {
