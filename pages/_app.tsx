@@ -46,7 +46,7 @@ const MyApp=({ Component, pageProps }:AppProps) =>{
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="shortcut icon" href="/favicon.png" key="shortcutIcon" />
+    <link rel="shortcut icon" href="/favicon.ico" key="shortcutIcon" />
     <link rel="manifest" href="/manifest.json" />
     <script
             async
