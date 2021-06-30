@@ -53,7 +53,9 @@ html{
   
   
 
-
+.cursor-poiner{
+  cursor: pointer;
+}
 
 /* blog */
 .mask{

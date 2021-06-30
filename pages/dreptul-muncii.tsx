@@ -1,20 +1,74 @@
 import React from "react";
+import { Accordion, Alert, Button, Card, ListGroup } from "react-bootstrap";
 import SecondaryPage from "../components/SecondaryPage";
 
+
+
 const page=()=>{
+
+const argumenteContractMunca=[
+'incheierea contractului individual de munca', 
+'executarea contractului individual de munca',
+'modificarea contractului individual de munca (delegare, detasare)',
+'suspendarea contractului individual de munca (concediu de maternitate, concediu pentru incapacitate temporara de munca, concediu pentru cresterea copilului, concediu pentru ingrijirea copilului bolnav, concediu paternal, concediu pentru formare profesionala, greva, s.a.)', 
+'incetarea contractului individual de munca',
+'concedierea colectiva si contestatie la decizia de concediere',
+'concedierea individuala si contestatie la decizia de concediere',
+'demisie'
+]
+
+const argumenteSedinteDeMediere=['Negocierea, stabilirea si acordarea drepturilor salariale, precum si a altor drepturi ce decurg din contractul individual de munca',
+'negocierea, stabilirea, incidenta si acordarea drepturilor/indeplinirea obligatiilor decurgand din clauze specifice din contractul individual de munca: clauza cu privire la formarea profesionala, clauza de neconcurenta, clauza de mobilitate, clauza de confidentialitate',
+'stabilirea si acordarea drepturilor privitoare la concedii (de odihna, de studiu, fara plata, medicale)',
+'cercetarea, aplicarea si contestarea sanctiunilor disciplinare (avertismentul scris, retrogradarea din functie, reducerea salariului de baza si/sau a indemnizatiei de conducere, desfacerea disciplinara a contractului individual de munca)',
+'atragerea raspunderii salariatului pentru restituirea unor sume incasate necuvenit, pentru repararea unor prejudicii aduse angajatorului, pentru incalcarea unor clauze specifice',
+'negocierea, stabilirea si acordarea despagubirilor pentru daune materiale',
+'negocierea, stabilirea si acordarea despagubirilor pentru daune morale']
     return(<>
         <SecondaryPage 
-        metaTitle={'DREPT PENAL'}
-        metaDescription={'Descriere'}
-        h1={'DREPT PENAL'}
-        >
+        metaTitle={'✅ Avocat Dreptul Muncii Brasov ⚖️ Doru Botea ✅ '}
+        metaDescription={'⚖️ Cabinet Avocat Doru Botea ✅ cele mai bune solutii  in cazuri de litigii de munca ✅  Profesionalism si  ✅ Preturi decente Afla cum te putem ajuta'
+    }
+    h1={'Avocat Dreptul Muncii Ce oferim si cum te putem ajuta'}
+    >
+<Accordion defaultActiveKey="0" className='text-dark'> 
+  <Card>
+    <Card.Header>
+      <Accordion.Toggle className="cursor-poiner hover-info" as={Alert}  variant="info" eventKey="0">
+     <h2 className="h6"> ✅ Asistenta juridica si reprezentarea clientilor in sedintele de mediere si in litigiile de munca intre angajator si salariat privitoare la <span className='text-success'>contractul individual de munca</span></h2>
+      </Accordion.Toggle>
+    </Card.Header>
+    <Accordion.Collapse eventKey="0">
+      <Card.Body>
+      <ListGroup>
+          {argumenteContractMunca.map((argument)=><ListGroup.Item>{'✔️ '}{argument}</ListGroup.Item>)}
+          </ListGroup>
 
+      </Card.Body>
+    </Accordion.Collapse>
+  </Card>
+  <Card>
+    <Card.Header>
+    <Accordion.Toggle className="cursor-poiner hover-info" as={Alert}  variant="info" eventKey="1">
+  <h2 className='h6'>    ✅ Asistenta juridica si reprezentarea clientilor in sedintele de mediere si in litigiile de munca privitoare la <span className='text-success'>drepturile si obligatiile salariatilor sau angajatorilor</span></h2>
+      </Accordion.Toggle>
+    </Card.Header>
+    <Accordion.Collapse eventKey="1">
+    <Card.Body>
+      <ListGroup>
+          {argumenteSedinteDeMediere.map((argument)=><ListGroup.Item>{'✔️ '}{argument}</ListGroup.Item>)}
+          </ListGroup>
+
+      </Card.Body>
+    </Accordion.Collapse>
+  </Card>
+</Accordion>
 </SecondaryPage> 
 
 
 <style jsx global>{`
 .parallax{
-background-image: url('/penal.png');
+background-image: url('secondaryPage/muncii.jpg');
 }
     
 `}</style>

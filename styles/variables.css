@@ -38,6 +38,7 @@
   --bs-secondary: var(--secondary-color);
   --bs-success: #198754;
   --bs-info: #164c57;
+  --bs-hover-info:#bfe8f0;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
@@ -70,4 +71,8 @@
 }
 .text-dark{
   color:var(--bs-dark)!important;
+}
+
+.hover-info:hover{
+  background-color:var(--bs-hover-info);
 }

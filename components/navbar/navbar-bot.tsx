@@ -21,7 +21,7 @@ const NavBot = () => {
            </>
           <Nav.Link className='align-self-center' href="/">Acasa</Nav.Link>
           <Nav.Link className='align-self-center' href="#servicii">Servicii</Nav.Link>
-          <Nav.Link className='align-self-center' href="/consultanta-online">Consultanta Online</Nav.Link>
+          <Nav.Link className='align-self-center' href="/avocat-online">Avocat Online</Nav.Link>
           <Nav.Link className='align-self-center' href="/blog">Blog</Nav.Link>
           <Nav.Link className='align-self-center' href="/contact">Contact</Nav.Link>
         </Nav>

@@ -6,7 +6,7 @@ module.exports = {
       return [
         {
           source: '/consultantaOnline',
-          destination: '/consultanta-online',
+          destination: '/avocat-online',
           permanent: true,
         },
         {

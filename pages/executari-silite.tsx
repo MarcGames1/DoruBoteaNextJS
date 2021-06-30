@@ -4,9 +4,9 @@ import SecondaryPage from "../components/SecondaryPage";
 const page=()=>{
     return(<>
         <SecondaryPage 
-        metaTitle={'DREPT PENAL'}
-        metaDescription={'Descriere'}
-        h1={'DREPT PENAL'}
+        metaTitle={'✅Avocat Executari Silite Brasov ⚖️ Doru Botea✅'}
+        metaDescription={'⚖️ Cabinet Avocat Doru Botea ✅ cele mai bune solutii  in cazuri de executare silita  ✅  Profesionalism si  ✅ Preturi decente Afla cum te putem ajuta'}
+        h1={'Executari Silite'}
         >
 
 </SecondaryPage> 
@@ -14,7 +14,7 @@ const page=()=>{
 
 <style jsx global>{`
 .parallax{
-background-image: url('/penal.png');
+background-image: url('/secondaryPage/Executari.jpg');
 }
     
 `}</style>
