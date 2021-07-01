@@ -15,6 +15,7 @@ function postData(){
             id,
             title: matterResult.data.title,
             description: matterResult.data.description,
+            img:matterResult.data.img
         }
     })
 return `export const posts = ${JSON.stringify(posts)}`

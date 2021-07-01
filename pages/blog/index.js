@@ -6,7 +6,7 @@ import Image from 'next/image';
 function IndexPage(props) {
   return (
     <a className = "my-5">
-        <a className="container" >
+        <a className="container bg-primary-color" >
         <section className="text-center">
         <h4 className="mb-5"><strong>Latest posts</strong></h4>
         {/* <div className="row"> */}
