@@ -1,5 +1,7 @@
 import React from "react";
 import Link from "next/link";
+import Image from 'next/image';
+
 
 function IndexPage(props) {
   return (
@@ -15,7 +17,7 @@ function IndexPage(props) {
                 <a key={blog.id}>
             <a className="card transparent-card">
               <a className="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src={blog.img} className="img-fluid" layout="fill" height={300} width= {150} object-fit= "contain" />
+                <Image src={blog.img} className="img-fluid" layout="responsive" height={300} width= {150} object-fit= "contain" />
                
                   <a className="mask" style={{backgroundColor:"rgba(251, 251, 251, 0.15)"}}></a>
                 

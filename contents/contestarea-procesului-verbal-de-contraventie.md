@@ -1,9 +1,12 @@
 ---
-title: 3 blog
-img: https://source.unsplash.com/random
+title: contestarea procesului verbal de contraventie
+
+img: /blog/brasovsus.jpg
+metaTitluSeo: test
+metaDescriereSeo: descriereSEO
 description: Descriere Bloc
-slug: third-blog
-date: "31-05-2020"
+slug: contestarea-procesului-verbal-de-contraventie
+date: "01-07-2020"
 ---
 
 Pellentesque condimentum velit vel justo rutrum, sit amet commodo diam tincidunt. Nunc diam massa, interdum ut aliquet at, scelerisque ac ex. Integer cursus sem ac pretium posuere. Ut at odio nulla. Phasellus nec ante luctus, egestas dui id, maximus dui. In aliquam elit sit amet sollicitudin luctus. Nunc nec leo quis ante vestibulum egestas. In dignissim libero vitae congue bibendum. Sed iaculis eros a leo pellentesque, et ultrices leo malesuada. Nullam ultrices rutrum accumsan. Pellentesque tempus sapien et vestibulum placerat.

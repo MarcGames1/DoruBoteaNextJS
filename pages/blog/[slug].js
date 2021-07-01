@@ -4,7 +4,7 @@ import {NextSeo} from 'next-seo'
 function BlogPostPage(props) {
   return (
     <a className ="min-100-vh">
-      <NextSeo title = {props.blog.title} description ={props.blog.description}/>
+      <NextSeo title = {props.blog.metaTitluSeo} description ={props.blog.metaDescriereSeo}/>
       
       <a className="container">
         
