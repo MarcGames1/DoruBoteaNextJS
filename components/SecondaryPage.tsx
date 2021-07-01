@@ -5,12 +5,12 @@ import Form from "./ConsultantaOnline/Form/form";
 import GoogleMaps from "./GoogleMaps/GoogleMaps";
 const SecondaryPage=(props)=>{
 
-    return(<>
+    return(<div className='bg-secondary-b'>
         <NextSeo title = {props.metaTitle}
                  description ={props.metaDescription}/>
 
 
-        <section className="categorie bg-black mx-auto">
+        <section className="categorie mx-auto">
         <div className="parallax">
         </div>
            
@@ -79,9 +79,6 @@ const SecondaryPage=(props)=>{
   
 }
 
-body{
-    background:black;
-}
 
 section h1{
     text-align: center;
@@ -95,7 +92,7 @@ li{
 }
             
             `}</style>
-    </>)
+    </div>)
 }
 
 export default SecondaryPage

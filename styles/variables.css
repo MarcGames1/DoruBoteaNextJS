@@ -76,3 +76,7 @@
 .hover-info:hover{
   background-color:var(--bs-hover-info);
 }
+
+.bg-secondary-b{
+  background-color:var(--bs-primary);
+}

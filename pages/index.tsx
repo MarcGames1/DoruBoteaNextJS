@@ -38,6 +38,7 @@ body{
 
     display: flex;
     flex-direction: column;
+    background-color: black;
   }
   
   header, section, .first-section, .second-section, #consultanta-online{

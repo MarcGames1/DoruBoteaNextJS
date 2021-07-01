@@ -24,6 +24,9 @@ const argumenteSedinteDeMediere=['Negocierea, stabilirea si acordarea drepturilo
 'atragerea raspunderii salariatului pentru restituirea unor sume incasate necuvenit, pentru repararea unor prejudicii aduse angajatorului, pentru incalcarea unor clauze specifice',
 'negocierea, stabilirea si acordarea despagubirilor pentru daune materiale',
 'negocierea, stabilirea si acordarea despagubirilor pentru daune morale']
+
+
+
     return(<>
         <SecondaryPage 
         metaTitle={'✅ Avocat Dreptul Muncii Brasov ⚖️ Doru Botea ✅ '}
