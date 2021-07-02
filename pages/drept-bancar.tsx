@@ -1,5 +1,5 @@
 import React from "react";
-import { Accordion, Alert, Card, Button, NavLink, ListGroup } from "react-bootstrap";
+import { Alert, ListGroup } from "react-bootstrap";
 import SecondaryPage from "../components/SecondaryPage";
 
 const page=()=>{
