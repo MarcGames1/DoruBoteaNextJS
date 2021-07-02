@@ -4,6 +4,7 @@ import { Jumbotron, ListGroup, Alert } from "react-bootstrap";
 import SecondaryPage from "../components/SecondaryPage";
 
 
+
 const penal=()=>{
 
 const listaServicii=[
@@ -76,6 +77,8 @@ const listaServicii=[
 <h5>❗Pentru mai multe detalii despre conditiile colaborarii cu un avocat penalist, nu ezitati sa ne
                 contactati. </h5>
 </Alert>
+
+
 
            </SecondaryPage> 
 

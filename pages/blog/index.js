@@ -14,11 +14,12 @@ function IndexPage(props) {
 
 
             return (
-              <Card  key={idx}>
+              <Card style={{width:'30vw'}} key={idx}>
                   <Card.Title>{blog.title}</Card.Title>
                 
                
-                <img className='card-img-top' height={300} src={blog.img}  />
+                {/* <Card.Img className='card-img-top' height={300} src={blog.img}  /> */}
+                
                 <Card.Body>
                   <Card.Text>
                     {blog.description}
@@ -27,10 +28,12 @@ function IndexPage(props) {
                     <Button variant="primary">Citeste Articolul</Button>
                   </Link>
                 </Card.Body>
+               
                 <Card.Footer className="text-muted">data postarii: {blog.date}</Card.Footer>
               </Card>
             )
           })}
+ 
         </CardGroup>
       </Container>
     </>
@@ -97,5 +100,5 @@ export async function getStaticProps() {
     props: { blogs },
   };
 }
-<img src="/assets" />
+<img src="/assets/blog" />
 export default IndexPage;
