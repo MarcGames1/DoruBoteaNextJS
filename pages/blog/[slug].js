@@ -2,20 +2,20 @@ import React from "react";
 
 import {NextSeo} from 'next-seo'
 function BlogPostPage(props) {
-  return (
-    <a className ="min-100-vh">
+  return (<>
       <NextSeo title = {props.blog.metaTitluSeo} description ={props.blog.metaDescriereSeo}/>
+    <div className ="min-100-vh  bg-primary-color">
       
-      <a className="container">
+      <div className="container-fluid">
         
       <h1 className="text-primary text-capitalize text-center text-light">{props.blog.title}</h1>
       <section dangerouslySetInnerHTML={{ __html: props.blog.content }}></section>
       <br/>
 
-      </a>
+      </div>
       
-    </a>
-  );
+    </div>
+  </>);
 }
 
 // pass props to BlogPostPage component

@@ -7,7 +7,7 @@ import { Container,CardGroup, Card, Button } from "react-bootstrap";
 function IndexPage(props) {
   return (
 <>
-<h1>blog post</h1>
+<h1>Blog</h1>
 <Container fluid>
   <CardGroup>
 {props.blogs.map((blog,idx )=>{
@@ -15,9 +15,9 @@ function IndexPage(props) {
   
   return(
     <Card key={idx}>
-   <Card.Img variant="top" src={blog.img} />
   <Card.Body>
-    <Card.Title>{blog.Title}</Card.Title>
+    <Card.Title>{blog.title}</Card.Title>
+   <Image width={500} height={100} layout='responsive' objectFit='scale-down' src={blog.img} />
     <Card.Text>
       {blog.description}
     </Card.Text>
