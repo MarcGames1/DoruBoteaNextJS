@@ -1,4 +1,5 @@
 ---
+id: 1
 title: contestarea procesului verbal de contraventie
 img: /blogPhotos/1/1.jpg
 metaTitluSeo: test
