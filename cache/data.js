@@ -1,1 +1,1 @@
-export const posts = [{"id":"contestarea-procesului-verbal-de-contraventie","title":"contestarea procesului verbal de contraventie","description":"Descriere Bloc","img":"blogPhotos/1/1.jpg"}]
+export const posts = [{"id":"contestarea-procesului-verbal-de-contraventie","title":"contestarea procesului verbal de contraventie","description":"Descriere Blog","img":"/blogPhotos/1/1.jpg"}]

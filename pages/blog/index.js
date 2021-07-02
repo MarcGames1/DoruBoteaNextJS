@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Image from 'next/image';
+import Image from 'next/image'  ;
 import { Container,CardGroup, Card, Button } from "react-bootstrap";
 
 
@@ -15,9 +15,11 @@ function IndexPage(props) {
   
   return(
     <Card key={idx}>
+    <div className='card-img-top'>
+   <Image  layout='fill' objectFit='scale-down' src={blog.img} />
+   </div>
   <Card.Body>
     <Card.Title>{blog.title}</Card.Title>
-   <Image className='rounded float-end' layout='fill' objectFit='scale-down' src={blog.img} />
     <Card.Text>
       {blog.description}
     </Card.Text>

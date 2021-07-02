@@ -9,7 +9,7 @@ date: "01-07-2020"
 
 ---
 <div class='container-fluid bg-primary-color'>
-<img class='img-fluid blog-img' layout='scale-down' alt='contraventie' src=/blogPhotos/1/1.jpg>
+<img class='img-fluid mx-auto d-block blog-img' layout='scale-down' alt='contraventie' src='/blogPhotos/1/1.jpg'>
    <p>Spre deosebire de sistemul altor state, sistemul de drept roman aplica procedurii contraventionale,
                 aparte de regulile speciale, regulile generale ale procedurii civile, optiunea legiuitorului roman fiind
                 in sensul atribuirii contraventiei un caracter civil.</p>
