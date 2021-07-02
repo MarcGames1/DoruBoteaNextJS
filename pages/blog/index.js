@@ -17,7 +17,7 @@ function IndexPage(props) {
     <Card key={idx}>
   <Card.Body>
     <Card.Title>{blog.title}</Card.Title>
-   <Image width={500} height={100} layout='responsive' objectFit='scale-down' src={blog.img} />
+   <Image className='rounded float-end' layout='fill' objectFit='scale-down' src={blog.img} />
     <Card.Text>
       {blog.description}
     </Card.Text>

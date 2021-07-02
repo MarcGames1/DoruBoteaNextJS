@@ -61,7 +61,9 @@ html{
 .mask{
   background-color:rgba(251, 251, 251, 0.15);
 }
-
+.blog-img{
+  max-height:30vh !important;
+}
 
   
   
