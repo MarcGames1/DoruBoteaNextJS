@@ -1,44 +1,70 @@
 import React from "react";
 import Link from "next/link";
 import Image from 'next/image';
+import { Container,CardGroup, Card, Button } from "react-bootstrap";
 
 
 function IndexPage(props) {
   return (
-    <a className = "my-5">
-        <a className="container bg-primary-color" >
-        <section className="text-center">
-        <h4 className="mb-5"><strong>Latest posts</strong></h4>
-        {/* <div className="row"> */}
-      <a className="row">
-        {props.blogs.map((blog, idx) => {
-            return (
-              <a className="col-lg-4 col-md-12 mb-4">
-                <a key={blog.id}>
-            <a className="card transparent-card">
-              <a className="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <Image src={blog.img} className="img-fluid" layout="responsive" height={300} width= {150} object-fit= "contain" />
+<>
+<h1>blog post</h1>
+<Container fluid>
+  <CardGroup>
+{props.blogs.map((blog,idx )=>{
+  
+  
+  return(
+    <Card key={idx}>
+   <Card.Img variant="top" src={blog.img} />
+  <Card.Body>
+    <Card.Title>{blog.Title}</Card.Title>
+    <Card.Text>
+      {blog.description}
+    </Card.Text>
+    <Link href={`/blog/${blog.slug}`}>
+    <Button variant="primary">Citeste Articolul</Button>
+    </Link>
+  </Card.Body>
+</Card>
+  )
+})}
+</CardGroup>
+</Container>
+</>
+  //   <a className = "my-5">
+  //       <a className="container bg-primary-color" >
+  //       <section className="text-center">
+  //       <h4 className="mb-5"><strong>Blog</strong></h4>
+  //       <div className="row">
+  //     <a className="row">
+  //       {props.blogs.map((blog, idx) => {
+  //           return (
+  //             <a className="col-lg-4 col-md-12 mb-4">
+  //               <a key={blog.id}>
+  //           <a className="card transparent-card">
+  //             <a className="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+  //               <Image src={blog.img} className="img-fluid" layout="responsive" height={300} width= {150} object-fit= "contain" />
                
-                  <a className="mask" style={{backgroundColor:"rgba(251, 251, 251, 0.15)"}}></a>
+  //                 <a className="mask" style={{backgroundColor:"rgba(251, 251, 251, 0.15)"}}></a>
                 
-              </a>
-              <a className="card-body">
-                <h5 className="text-secondary card-title">{blog.title}</h5>
-                <p className="card-text">{blog.description} </p>
-                <Link href={`/blog/${blog.slug}`}>
-                <a href="#!" className="text-secondary btn from-left">Cititi</a>
-                </Link>
-              </a>
-            </a>
-            </a>
-          </a>
-          );
-        })}
-      </a>
-        {/* </div> */}
-        </section>
-      </a>
-    </a>
+  //             </a>
+  //             <a className="card-body">
+  //               <h5 className="text-secondary card-title">{blog.title}</h5>
+  //               <p className="card-text">{blog.description} </p>
+  //               <Link href={`/blog/${blog.slug}`}>
+  //               <a href="#!" className="text-secondary btn from-left">Cititi</a>
+  //               </Link>
+  //             </a>
+  //           </a>
+  //           </a>
+  //         </a>
+  //         );
+  //       })}
+  //     </a>
+  //       </div>
+  //       </section>
+  //     </a>
+  //   </a>
   );
 }
 

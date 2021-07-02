@@ -52,7 +52,7 @@ const listaServicii=[
                 <ListGroup.Item>Conducere sub influenţa băuturilor alcoolice sau drogurilor;</ListGroup.Item>
             </ListGroup>
                <Alert variant={'secondary'}>
-               ℹ️ Simplul fapt ca sunteti invinuit sau inculpat intr-o cauza de natura penala nu este echivalent cu a fi
+                Simplul fapt ca sunteti invinuit sau inculpat intr-o cauza de natura penala nu este echivalent cu a fi
                 gasit vinovat și condamnat de catre o instanta de judecata. Situatia dumneavoastra poate fi intotdeauna
                 imbunatatita daca aveti alaturi un avocat de drept penal care sa actioneze operativ si care sa va ofere
                 consultanta specializata. Invinuitul sau inculpatul are dreptul sa fie asistat de aparator in tot cursul
@@ -61,7 +61,7 @@ const listaServicii=[
                </Alert>
 
 
-<h2 className='h4'>O parte din serviciile pe care le oferin din sfera dreptului penal sunt:</h2>
+<h2 className='h4'>O parte din serviciile pe care le oferim din sfera dreptului penal sunt:</h2>
             
 
               <ListGroup>

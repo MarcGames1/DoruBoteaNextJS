@@ -11,7 +11,7 @@ const page = () => {
         'Obtinerea titlurilor executorii pentru recuperarea creantelor',
         'Consultanta si asistenta juridica in vederea identificarii celei mai avantajoase proceduri de executare silita',
         'Negocieri cu debitorii/creditorii',
-        'Redactare acorduri de plata, tramzactii etc',
+        'Redactare acorduri de plata, tranzactii etc',
         'Asistenta juridica si reprezentare in fata executorului judecatoresc in procedura executarii silite',
         'Urmarirea actelor de executare pana la finalizarea executarii silite',
         'Asistenta si reprezentare juridica in procedura contestatiei la executare precum si in cadrul actiunilor avand ca obiect suspendarea executarii',
@@ -19,8 +19,8 @@ const page = () => {
         'Intoarcerea executarii silite',
         'constatarea nulitatii clauzei de fidejusiune',
         'Asistenta juridica si reprezentare in procedura evacuarii, licitatiei, sechestre etc.',
-        'Consultanta si asistenta juridica in procedura executarii silita a obligatiilor de a face si a nu face, a hotararilor judecatoresti referitoare la minori precum stabilirea locuintei minorilor, darea in plasament, exercitarea dreptului de a avea legaturi personale cu minorul, precum si orice alte masuri prevazute de lege',
-        'Orice alte servicii specifice'
+        // 'Consultanta si asistenta juridica in procedura executarii silita a obligatiilor de a face sau a nu face, a hotararilor judecatoresti referitoare la minori precum stabilirea locuintei minorilor, darea in plasament, exercitarea dreptului de a avea legaturi personale cu minorul, precum si orice alte masuri prevazute de lege',
+        'Orice alte servicii de natura juridica'
 
     ]
 

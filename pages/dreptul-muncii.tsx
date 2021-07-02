@@ -13,7 +13,6 @@ const argumenteContractMunca=[
 'suspendarea contractului individual de munca (concediu de maternitate, concediu pentru incapacitate temporara de munca, concediu pentru cresterea copilului, concediu pentru ingrijirea copilului bolnav, concediu paternal, concediu pentru formare profesionala, greva, s.a.)', 
 'incetarea contractului individual de munca',
 'concedierea si contestatie la decizia de concediere',
-'concedierea individuala si contestatie la decizia de concediere',
 'demisie'
 ]
 
@@ -41,13 +40,13 @@ const argumenteSedinteDeMediere=['Negocierea, stabilirea si acordarea drepturilo
     <Card.Header>
           <h6 className='text-secondary'>In ceea ce priveste contractul individual de munca va putem ajuta cu </h6>
       <Accordion.Toggle className="cursor-poiner hover-info" as={Alert}  variant="info" eventKey="0">
-     <h2 className="h6"> ✅ Asistenta juridica si reprezentarea Dvs.  in litigiile de munca ivite intre angajator si salariat privitoare la <span className='text-success'>contractul individual de munca</span> consultanta juridica cu privire la:</h2>
+     <h2 className="h6"> ✅ Asistenta juridica si reprezentarea Dvs.  in litigiile de munca ivite intre angajator si salariat privitoare la <span className='text-success'>contractul individual de munca</span> </h2>consultanta juridica cu privire la:
       </Accordion.Toggle>
     </Card.Header>
     <Accordion.Collapse eventKey="0">
       <Card.Body>
       <ListGroup>
-          {argumenteContractMunca.map((argument)=><ListGroup.Item key={argument}>{'✔️ '}{argument}</ListGroup.Item>)}
+          {argumenteContractMunca.map((argument)=><ListGroup.Item key={argument}>{'✅ '}{argument}</ListGroup.Item>)}
           </ListGroup>
 
       </Card.Body>
@@ -55,15 +54,15 @@ const argumenteSedinteDeMediere=['Negocierea, stabilirea si acordarea drepturilo
   </Card>
   <Card>
     <Card.Header>
-    <h6 className='text-secondary'>Pe parcursul desfasurarii contractului de munca sau dupa incheierea acestuia oferim</h6>
+    <h6 className='text-secondary'>Pe parcursul desfasurarii contractului individual de munca sau dupa incheierea acestuia oferim</h6>
     <Accordion.Toggle className="cursor-poiner hover-info" as={Alert}  variant="info" eventKey="1">
-  <h2 className='h6'>    ✅ Asistenta juridica si reprezentarea clientilor in litigiile de munca privitoare la <span className='text-success'>drepturile si obligatiile salariatilor sau angajatorilor</span></h2>
+  <h2 className='h6'>✅ Asistenta juridica si reprezentarea clientilor in litigiile de munca privitoare la <span className='text-success'>drepturile si obligatiile salariatilor sau angajatorilor</span></h2>
       </Accordion.Toggle>
     </Card.Header>
     <Accordion.Collapse eventKey="1">
     <Card.Body>
       <ListGroup>
-          {argumenteSedinteDeMediere.map((argument)=><ListGroup.Item key={argument}>{'✔️ '}{argument}</ListGroup.Item>)}
+          {argumenteSedinteDeMediere.map((argument)=><ListGroup.Item key={argument}>{'✅ '}{argument}</ListGroup.Item>)}
           </ListGroup>
 
       </Card.Body>
