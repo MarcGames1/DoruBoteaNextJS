@@ -4,6 +4,7 @@ import { Container, Alert, Button } from "react-bootstrap";
 
 
 function IndexPage(props) {
+
   return (
     <>
       <h1 className='text-center'>Blog</h1>
@@ -56,12 +57,13 @@ export async function getStaticProps() {
         encoding: "utf-8",
       });
       const { data } = matter(rawContent);
-
+ 
       return { ...data, id: uuid() };
     });
 
   // By returning { props: blogs }, the IndexPage component
   // will receive `blogs` as a prop at build time
+  
   return {
     props: { blogs },
   };

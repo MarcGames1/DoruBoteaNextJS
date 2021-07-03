@@ -1,16 +1,23 @@
 import React from "react";
-
+import {Container, Row, Col} from 'react-bootstrap'
 import {NextSeo} from 'next-seo'
 function BlogPostPage(props) {
   return (<>
       <NextSeo title = {props.blog.metaTitluSeo} description ={props.blog.metaDescriereSeo}/>
     <div className ="min-100-vh  bg-primary-color">
       
-      <div className="container-fluid">
-        
-      <h1 className="text-primary text-capitalize text-center text-light">{props.blog.title}</h1>
+      <div className="container">
+      <Row>
+    <Col>1 of 3</Col>
+    <Col xs={6}>
+    <h1 className="text-primary text-capitalize text-center text-light">{props.blog.title}</h1>
       <section dangerouslySetInnerHTML={{ __html: props.blog.content }}></section>
-      <br/>
+      <hr/>
+
+    </Col>
+    <Col>3 of 3</Col>
+  </Row>
+    
 
       </div>
       
