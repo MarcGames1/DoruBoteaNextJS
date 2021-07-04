@@ -4,7 +4,7 @@ const FirstSectionButton = (props)=>{
     
     return(
         <>
-        <a className={'btn from-left' +" "+ props.class} href={props.href}>{props.text}</a>
+        <a className={'btn from-left' +" "+ props.class} href={props.href}>{props.text.toUpperCase()}</a>
 
         <style  jsx>{`
         button{
@@ -18,7 +18,7 @@ const FirstSectionButton = (props)=>{
 .btn {		
 	z-index: 2;
 	position: relative;	
-	padding: 1.4rem 4.2rem;
+	padding: 1.4rem;
 	
 	
 	color: var(--primary-font-color);

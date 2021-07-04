@@ -41,9 +41,9 @@ function IndexPage(props) {
   })
 
   return (
-    <>
-      <h1 className='text-center'>Blog</h1>
-      <h6 className='text-center'>Se afiseaza postari din {filter}</h6>
+    <div className='bg-secondary'>
+      <h1 className='text-center text-light '>Blog</h1>
+      <h6 className='text-center text-light'>Se afiseaza postari din {filter}</h6>
       <Container fluid>
         <Row>
           {/* butoanele din stanga */}
@@ -96,7 +96,7 @@ function IndexPage(props) {
 
 
       </Container>
-    </>
+    </div>
 
   );
 }

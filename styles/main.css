@@ -35,7 +35,13 @@ html{
 
 
 
-
+.secondary-bg{
+  background:var(--transparent);  
+  background-image: url("/assets/images/background1.webp");
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: darken;
+}
 
 .b1ackground{
   overflow-y: hidden;
