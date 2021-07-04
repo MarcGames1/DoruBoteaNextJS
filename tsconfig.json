@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "pages/__document.js", "components/contact/orar.jsx"  ],
+, "pages/__document.js", "components/contact/orar.jsx", "pages/blog/index.js"  ],
   "exclude": [
     "node_modules"
   ]

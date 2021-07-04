@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { Container, Alert, Button } from "react-bootstrap";
+import { Container, Col, Row } from "react-bootstrap";
+import BlogElements from "../../components/blogComponents/blogElements";
 
 
 function IndexPage(props) {
@@ -9,35 +10,23 @@ function IndexPage(props) {
     <>
       <h1 className='text-center'>Blog</h1>
       <Container fluid>
-       
-          {props.blogs.map((blog, idx) => {
+        <Row>
+          <Col>1of3</Col>
+          <Col sm={6}>
+            {props.blogs.map((blog) => {
+              return (
+                <BlogElements {...blog} />
+              )
+            })}
+
+          </Col>
+          <Col>3 of 3</Col>
+        </Row>
 
 
-            return (
-              <Alert variant='secondary' key={idx}>
-                  <Alert.Heading>{blog.title.toUpperCase()}</Alert.Heading>
-                
-               
-             
-                
-                
-                  <div className='h5'>
-                    {blog.description}
-                  </div>
-                  <Link href={`/blog/${blog.slug}`}>
-                    <Button variant="secondary">Citeste Articolul</Button>
-                  </Link>
-                
-               
-                <div className="text-muted">data postarii: {blog.date}</div>
-              </Alert>
-            )
-          })}
- 
-        
       </Container>
     </>
-  
+
   );
 }
 
@@ -57,13 +46,13 @@ export async function getStaticProps() {
         encoding: "utf-8",
       });
       const { data } = matter(rawContent);
- 
+      console.log(data)
       return { ...data, id: uuid() };
     });
 
   // By returning { props: blogs }, the IndexPage component
   // will receive `blogs` as a prop at build time
-  
+
   return {
     props: { blogs },
   };
