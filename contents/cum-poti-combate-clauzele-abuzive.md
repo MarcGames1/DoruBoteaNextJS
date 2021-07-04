@@ -7,7 +7,7 @@ metaDescriereSeo: descriereSEO
 description: Afla Cum poti Combate clauzele abuzive ale bancilor
 slug: cum-poti-combate-clauzele-abuzive
 date: "02-07-2020"
-tags: 'bancar'
+tags: 'Drept Bancar'
 ---
 
 <p>
