@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import Link from "next/link";
 import { Container, Col, Row, DropdownButton, Button, ButtonGroup, Dropdown } from "react-bootstrap";
@@ -14,6 +14,7 @@ import BlogElements from "../../components/blogComponents/blogElements";
 
 function IndexPage(props) {
   const [filter, setFilter] = useState('toate categoriile')
+  const [active, setActive] = useState(false)
 
   const arataToateCategoriile = () => {
     {
@@ -50,9 +51,9 @@ function IndexPage(props) {
             <h2 className='text-center'>Categorii</h2>
 
             <ButtonGroup className='d-block' vertical>
-              <Button onClick={(e) => { setFilter('toate categoriile') }}>Toate Categoriile</Button>
+              <Button active={filter == 'toate categoriile'} onClick={(e) => { setFilter('toate categoriile'); setActive(true) }}>Toate Categoriile</Button>
               {tagsList.map((tag) => {
-                return <Button onClick={(e) => { setFilter(tag) }}>{tag}</Button> // treci prin fiecare tag si fa un buton cu numele lui
+                return <Button active={filter == tag} onClick={(e) => { setFilter(tag); setActive(true) }}>{tag}</Button> // treci prin fiecare tag si fa un buton cu numele lui
               })}
             </ButtonGroup>
           </Col>

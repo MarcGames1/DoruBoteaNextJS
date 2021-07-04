@@ -7,7 +7,7 @@ metaDescriereSeo: descriereSEO
 description: Descriere Blog
 slug: contestarea-procesului-verbal-de-contraventie
 date: "01-07-2020"
-tags: "Drept Contraventional, penal"
+tags: "Drept Contraventional"
 
 ---
 <div class='container-fluid bg-primary-color'>
