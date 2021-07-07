@@ -12,7 +12,7 @@ const NavBot = () => {
            <Navbar.Brand className="  d-lg-none d-md-none d-sm-inline-block"  href="#home">
                <img src="/assets/images/Phone-layout.webp"  alt="logo+phone" width={250} height={40} />
            </Navbar.Brand>
-    <Navbar.Toggle className=' d-inline-block'  aria-controls="basic-navbar-nav"  />
+    <Navbar.Toggle className=' d-lg-none d-md-none d-sm-inline-block'  aria-controls="basic-navbar-nav"  />
               
     <Navbar.Collapse id="basic-navbar-nav">
         
