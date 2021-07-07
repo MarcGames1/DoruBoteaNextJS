@@ -91,6 +91,34 @@ li{
     list-style-position: inside;
 }
             
+/* Non-Retina */
+@media screen and (-webkit-max-device-pixel-ratio: 1) {
+
+}
+
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+  .parallax{
+    background-attachment:scroll;
+  }
+}
+
+/* iPhone Portrait and landscape */
+@media only screen and (max-device-width: 480px) and (orientation:portrait),
+ only screen and (max-device-width: 480px) and (orientation:landscape),
+
+
+ {
+  .parallax{
+    background-attachment:scroll;
+  }
+} 
+
+
+
             `}</style>
     </div>)
 }

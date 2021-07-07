@@ -1,7 +1,7 @@
 // afisare conditionata cu varianta navbar phone
 import React from "react";
 import {  Container, Nav, Navbar } from "react-bootstrap";
-import Image from "next/image";
+
 
 const NavBot = () => {
     return (
