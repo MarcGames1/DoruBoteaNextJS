@@ -41,6 +41,17 @@ const MyApp=({ Component, pageProps }:AppProps) =>{
     TagManager.initialize({ gtmId: 'GTM-P4QDK6G' });
   }, []);
 
+
+
+
+  //blog state for similar articles filter
+
+  const [filter, setFilter]= useState('toate categoriile')
+  const changeFilter = (newFilter :string)=>{setFilter(newFilter)}
+  const [blogs, setBlogs] = useState({})
+  // const updateBlogs = (blogs :object)=>{setBlogs(blogs); console.log('updated Blogs Globally')}
+
+
   return  <>
   <Head>
     <meta
@@ -66,7 +77,12 @@ const MyApp=({ Component, pageProps }:AppProps) =>{
         />
     </Head>    
     <Navbar/>
-  <Component {...pageProps} />
+  <Component {...pageProps}
+  filter = {filter}
+  // blogs = {blogs}
+  // updateBlogs={updateBlogs}
+  changeFilter={changeFilter}
+  />
   <Footer />
 </>
 }

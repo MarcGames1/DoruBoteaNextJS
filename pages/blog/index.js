@@ -13,19 +13,18 @@ import BlogElements from "../../components/blogComponents/blogElements";
 
 
 function IndexPage(props) {
+  {console.log('blogIndexPage Props bellow')}
+  {console.log(props)}
+  
   const [filter, setFilter] = useState('toate categoriile')
  
 
-  const arataToateCategoriile = () => {
-    {
-      props.blogs.map((blog) => {
-        return (<>
-          <BlogElements {...blog} />
-
-        </>)
-      })
-    }
-  }
+  //updateaza starea atat local cat si global
+const ChangeFilter=(filter)=>{
+  setFilter(filter)
+  props.changeFilter(filter)
+}
+ 
   
   
   
@@ -48,12 +47,12 @@ function IndexPage(props) {
         <Row>
           {/* butoanele din stanga */}
           <Col  sm={3}>
-            <h2 className='text-center'>Categorii</h2>
+            <h2 className='text-light text-center'>Categorii</h2>
 
             <ButtonGroup className='d-block' vertical>
-              <Button active={filter == 'toate categoriile'} onClick={(e) => { setFilter('toate categoriile');  }}>Toate Categoriile</Button>
+              <Button active={filter == 'toate categoriile'} onClick={(e) => { ChangeFilter('toate categoriile');  }}>Toate Categoriile</Button>
               {tagsList.map((tag) => {
-                return <Button active={filter == tag} onClick={(e) => { setFilter(tag);  }}>{tag}</Button> // treci prin fiecare tag si fa un buton cu numele lui
+                return <Button active={filter == tag} onClick={(e) => { ChangeFilter(tag) }}>{tag}</Button> // treci prin fiecare tag si fa un buton cu numele lui
               })}
             </ButtonGroup>
           </Col>
@@ -62,14 +61,14 @@ function IndexPage(props) {
 
 
 
-          <Col sm={8}>
+          <Col sm={9}>
            
 
           {props.blogs.map((blog) => {
             if (filter === 'toate categoriile'){
             console.log(blog)
                 return (<>
-                  <BlogElements key={blog.id} {...blog} />
+                  <BlogElements key={blog.id} {...blog} blogs = {props.blogs}/>
                 </>)}
           else{
           const blogTags = blog.tags.split(',')
@@ -77,6 +76,7 @@ function IndexPage(props) {
             if (tag == filter) //cauta in talgist sa nu fie acelasi tag
               filteredBlogs.push(blog) //daca nu e il adaugi
               console.log(filteredBlogs)
+             
           });
           }
         

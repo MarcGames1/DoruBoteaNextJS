@@ -20,7 +20,8 @@ function BlogPostPage(props) {
     </Col>
     <Col>3 of 3</Col>
   </Row>
-    
+  {console.log('slug.js props')}
+    {console.log(props)}
 
       </div>
       
