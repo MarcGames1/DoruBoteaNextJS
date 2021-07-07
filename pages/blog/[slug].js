@@ -1,10 +1,13 @@
 import React from "react";
 import {Container, Row, Col} from 'react-bootstrap'
 import {NextSeo} from 'next-seo'
+
 function BlogPostPage(props) {
   return (<>
+  
       <NextSeo title = {props.blog.metaTitluSeo} description ={props.blog.metaDescriereSeo}/>
     <div className ="min-100-vh  bg-primary-color">
+     
       
       <div className="container">
       <Row>

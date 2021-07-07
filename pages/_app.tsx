@@ -14,6 +14,7 @@ import Navbar from '../components/navbar/navbar';
 import Footer from '../components/Footer/footer';
 
 
+
 // <Component {...pageProps}  />
 // <Spinner  animation="border" variant="secondary" />
 
@@ -69,5 +70,6 @@ const MyApp=({ Component, pageProps }:AppProps) =>{
   <Footer />
 </>
 }
+   
 
 export default MyApp
