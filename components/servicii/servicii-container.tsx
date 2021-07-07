@@ -8,7 +8,7 @@ const ServiciiContainer =() => {
     return(
     <>
 
-<section className="servicii-detalii">
+<section id='Servicii' className="servicii-detalii">
         <main className="h-10 ">
         <Image className="section-img img-fluid" src="/assets/images/ServiciiBG.webp" alt='image' width={1920} height={773} loading='lazy' layout='intrinsic' objectFit='contain'/>
         </main>

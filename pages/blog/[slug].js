@@ -1,5 +1,6 @@
 import React from "react";
-import {Container, Row, Col} from 'react-bootstrap'
+import {Container,Button, ButtonGroup, Row, Col} from 'react-bootstrap'
+
 import {NextSeo} from 'next-seo'
 
 function BlogPostPage(props) {
@@ -11,14 +12,16 @@ function BlogPostPage(props) {
       
       <div className="container">
       <Row>
-    <Col>1 of 3</Col>
-    <Col xs={6}>
+    <Col>
+    
+    </Col>
+    <Col xs={9}>
     <h1 className="text-primary text-capitalize text-center text-light">{props.blog.title}</h1>
       <section dangerouslySetInnerHTML={{ __html: props.blog.content }}></section>
       <hr/>
 
     </Col>
-    <Col>3 of 3</Col>
+    
   </Row>
   {console.log('slug.js props')}
     {console.log(props)}

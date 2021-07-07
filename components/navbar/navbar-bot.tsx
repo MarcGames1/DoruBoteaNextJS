@@ -19,7 +19,7 @@ const NavBot = () => {
         <Nav className="mx-auto justify-self-evenly">
            
           <Nav.Link className='align-self-center' href="/">Acasa</Nav.Link>
-          <Nav.Link className='align-self-center' href="#servicii">Servicii</Nav.Link>
+          <Nav.Link className='align-self-center' href="/#Servicii">Servicii</Nav.Link>
           <Nav.Link className='align-self-center' href="/avocat-online">Avocat Online</Nav.Link>
           <Nav.Link className='align-self-center' href="/blog">Blog</Nav.Link>
           <Nav.Link className='align-self-center' href="/contact">Contact</Nav.Link>

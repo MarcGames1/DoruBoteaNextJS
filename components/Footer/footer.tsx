@@ -30,8 +30,8 @@ const Footer = () => {
 
             <main className="grid-item inner-grid-container">
                 
-                <main className="grid-item"><a href="#servicii">Servicii</a></main>   
-                <main className="grid-item"><a href="/consultanta-online">Consultanta Online</a></main>   
+                <main className="grid-item"><a href="/#servicii">Servicii</a></main>   
+                <main className="grid-item"><a href="/avocat-online">Avocat Online</a></main>   
                 <main className="grid-item"><a href="/contact">Contact</a></main>   
                 <main className="grid-item"><a href="/blog">Blog</a></main>   
             </main>
