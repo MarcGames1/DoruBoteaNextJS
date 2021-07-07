@@ -8,17 +8,16 @@ const NavBot = () => {
         <>
     <Navbar  bg="secondary-color" variant="dark"  expand="md">
   <Container  >
-   <Container fluid className='row'>
-           <Navbar.Brand className=" col-9 my-2 d-lg-none d-md-none d-sm-flex"  href="#home">
-               <Image src="/assets/images/Phone-layout.webp"  alt="logo+phone" width={500} height={70} layout='intrinsic' />
-              
+   <Container fluid>
+           <Navbar.Brand className="  d-lg-none d-md-none d-sm-inline-block"  href="#home">
+               <img src="/assets/images/Phone-layout.webp"  alt="logo+phone" width={250} height={40} />
            </Navbar.Brand>
-    <Navbar.Toggle className="mr-auto  col-2 d-sm-flex"  aria-controls="basic-navbar-nav"  />
+    <Navbar.Toggle className=' d-inline-block'  aria-controls="basic-navbar-nav"  />
+              
     <Navbar.Collapse id="basic-navbar-nav">
         
         <Nav className="mx-auto justify-self-evenly">
-           <>
-           </>
+           
           <Nav.Link className='align-self-center' href="/">Acasa</Nav.Link>
           <Nav.Link className='align-self-center' href="#servicii">Servicii</Nav.Link>
           <Nav.Link className='align-self-center' href="/avocat-online">Avocat Online</Nav.Link>
