@@ -7,6 +7,7 @@ import WhatsappComponent from "./navbar-mid/whatsapp";
 
 
 const NavbarMid = () => {
+    
 
     return (
         <div className="container-fluid">

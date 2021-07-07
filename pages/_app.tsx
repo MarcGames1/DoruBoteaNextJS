@@ -12,6 +12,7 @@ import * as ga from '../lib/ga'
 import Head from 'next/head'
 import Navbar from '../components/navbar/navbar';
 import Footer from '../components/Footer/footer';
+import WhatsappSticky from '../components/svgComponents/stickyWhatsapp';
 
 
 
@@ -77,6 +78,7 @@ const MyApp=({ Component, pageProps }:AppProps) =>{
         />
     </Head>    
     <Navbar/>
+    <WhatsappSticky />
   <Component {...pageProps}
   filter = {filter}
   // blogs = {blogs}

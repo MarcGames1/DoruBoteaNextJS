@@ -3,6 +3,7 @@ import {NextSeo} from 'next-seo'
 import FirstSection from '../components/firstSection/firstSection'
 import ServiciiContainer from '../components/servicii/servicii-container'
 import ConsultantaOnline from '../components/ConsultantaOnline/consultantaOnline'
+import UpArrow from '../components/svgComponents/uparrow'
 
 
 const img ="/assets/images/background1.webp"
@@ -19,7 +20,7 @@ const description = ""
       <NextSeo title = {title} description ={description}/>
       
       <FirstSection />
-      
+      <UpArrow />
       <ServiciiContainer />
       <ConsultantaOnline />
       
