@@ -14,13 +14,14 @@ export default function Home() {
 const title = "Avocat Brasov Doru Botea" 
 const description = ""
 
+
   return (
     <>
 
       <NextSeo title = {title} description ={description}/>
       
       <FirstSection />
-      <UpArrow />
+      
       <ServiciiContainer />
       <ConsultantaOnline />
       

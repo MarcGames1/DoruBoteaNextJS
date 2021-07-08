@@ -13,6 +13,7 @@ import Head from 'next/head'
 import Navbar from '../components/navbar/navbar';
 import Footer from '../components/Footer/footer';
 import WhatsappSticky from '../components/svgComponents/stickyWhatsapp';
+import UpArrow from '../components/svgComponents/uparrow';
 
 
 
@@ -79,6 +80,7 @@ const MyApp=({ Component, pageProps }:AppProps) =>{
     </Head>    
     <Navbar/>
     <WhatsappSticky />
+    <UpArrow />
   <Component {...pageProps}
   filter = {filter}
   // blogs = {blogs}

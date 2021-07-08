@@ -1,9 +1,17 @@
-import React from "react";
-import {Container,Button, ButtonGroup, Row, Col} from 'react-bootstrap'
+import React, {useState} from "react";
+import {Container, DropdownButton ,Button, ButtonGroup, Row, Dropdown ,Col} from 'react-bootstrap'
 
 import {NextSeo} from 'next-seo'
 
 function BlogPostPage(props) {
+  const [show, setShow] = useState(false);
+  const showDropdown = (e)=>{
+      setShow(!show);
+  }
+  const hideDropdown = e => {
+      setShow(false);
+  }
+
   return (<>
   
       <NextSeo title = {props.blog.metaTitluSeo} description ={props.blog.metaDescriereSeo}/>
@@ -12,10 +20,37 @@ function BlogPostPage(props) {
       
       <div className="container">
       <Row>
-    <Col>
+    <Col className='align-items-center' xs={12} md={3} xs={{order:'last'}}>
+    <ButtonGroup className='position-fixed-desktop' vertical>
+  <Button href='/blog'>Inapoi la articole de blog</Button>
+  <Button href = '/'>Pagina principala</Button>
+
+  <DropdownButton  as={ButtonGroup} 
+  show={show}
+  onMouseEnter={showDropdown} 
+  onMouseLeave={hideDropdown}
+  title="Servicii" 
+  id="bg-vertical-dropdown-1">
     
+          <Dropdown.Item href="/drept-penal">Drept Penal</Dropdown.Item>
+          <Dropdown.Item href="/dreptul-familiei">Dreptul Familiei</Dropdown.Item>
+          <Dropdown.Item href="/drept-civil">Drept Civil</Dropdown.Item>
+          <Dropdown.Item href="/malpraxis-medical">Malpraxis Medical</Dropdown.Item>
+          <Dropdown.Item href="/dreptul-muncii">Dreptul Muncii</Dropdown.Item>
+          <Dropdown.Item href="/executari-silite">Executari Silite</Dropdown.Item>
+          <Dropdown.Item href="/drept-imobiliar">Drept Imobiliar</Dropdown.Item>
+          <Dropdown.Item href="/drept-contraventional">Drept Contraventional</Dropdown.Item>
+          <Dropdown.Item href="/drept-bancar">Drept Bancar</Dropdown.Item>
+          <Dropdown.Item href="/drept-administrativ">Drept Administrativ</Dropdown.Item>
+  </DropdownButton>
+
+  <Button href='/avocat-online'>Avocat Online</Button>
+  <Button href='/contact'>Contact</Button>
+
+
+</ButtonGroup>
     </Col>
-    <Col xs={9}>
+    <Col xs={12} md={9}>
     <h1 className="text-primary text-capitalize text-center text-light">{props.blog.title}</h1>
       <section dangerouslySetInnerHTML={{ __html: props.blog.content }}></section>
       <hr/>
@@ -23,12 +58,25 @@ function BlogPostPage(props) {
     </Col>
     
   </Row>
-  {console.log('slug.js props')}
+ 
     {console.log(props)}
 
       </div>
       
     </div>
+
+    <style jsx >{`
+    @media (min-width:979px) {
+  .position-fixed-desktop {
+    position:fixed;
+    bottom:0; 
+    right:0; 
+  }
+  
+
+}
+      
+      `}</style>
   </>);
 }
 
