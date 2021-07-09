@@ -3,7 +3,6 @@ import {NextSeo} from 'next-seo'
 import FirstSection from '../components/firstSection/firstSection'
 import ServiciiContainer from '../components/servicii/servicii-container'
 import ConsultantaOnline from '../components/ConsultantaOnline/consultantaOnline'
-import UpArrow from '../components/svgComponents/uparrow'
 
 
 const img ="/assets/images/background1.webp"
@@ -11,8 +10,8 @@ const img ="/assets/images/background1.webp"
 
 export default function Home() {
 
-const title = "Avocat Brasov Doru Botea" 
-const description = ""
+const title = "Avocat Brasov ✅ Doru Botea ⚖" 
+const description = "Avocat Doru Botea lupta pana la capat gasind✅cele mai bune solutii in conditiile legii pentru ca drepturile si libertatile dumneavoastra sa fie respectate"
 
 
   return (

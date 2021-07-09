@@ -3,18 +3,20 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Container, Col, Row, DropdownButton, Button, ButtonGroup, Dropdown } from "react-bootstrap";
 import BlogElements from "../../components/blogComponents/blogElements";
-
+import {NextSeo} from 'next-seo'
 
 // itereaza prin taglist(care este string) si returneaza un array cu taguri unice
 
-
+const title='Avocat ✅ Doru Botea ✅ Blog'
+const description = 'Pe aceasta pagina vei gasi atat articole din sfera dreptului cat si cazuri concrete si realizari ale Cabinet Avocat Doru Botea ✅'
 
 
 
 
 function IndexPage(props) {
-  {console.log('blogIndexPage Props bellow')}
-  {console.log(props)}
+
+  <NextSeo title = {title}
+   description ={description}/>
   
   const [filter, setFilter] = useState('toate categoriile')
  
