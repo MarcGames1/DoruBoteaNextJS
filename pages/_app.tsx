@@ -14,6 +14,8 @@ import Navbar from '../components/navbar/navbar';
 import Footer from '../components/Footer/footer';
 import WhatsappSticky from '../components/svgComponents/stickyWhatsapp';
 import UpArrow from '../components/svgComponents/uparrow';
+import { Button } from 'react-bootstrap';
+import Phone from '../components/svgComponents/phone';
 
 
 
@@ -52,7 +54,7 @@ const MyApp=({ Component, pageProps }:AppProps) =>{
   const changeFilter = (newFilter :string)=>{setFilter(newFilter)}
   const [blogs, setBlogs] = useState({})
   // const updateBlogs = (blogs :object)=>{setBlogs(blogs); console.log('updated Blogs Globally')}
-
+const color = 'white'
 
   return  <>
   <Head>
@@ -87,7 +89,19 @@ const MyApp=({ Component, pageProps }:AppProps) =>{
   // updateBlogs={updateBlogs}
   changeFilter={changeFilter}
   />
+  <Button className='vw-100 d-sm-block d-lg-none d-md-none' href="tel:+40744312032"id='sticky-phone' variant="success"  size="lg" block>
+    <Phone color={'white'} /> Sunati Acum
+  </Button>
   <Footer />
+
+  <style global jsx>{`
+    #sticky-phone{
+      position:fixed;
+      z-index:999999999999;
+      bottom:0;
+    }
+    
+    `}</style>
 </>
 }
    
