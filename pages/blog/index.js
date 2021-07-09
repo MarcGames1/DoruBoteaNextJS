@@ -43,7 +43,7 @@ const ChangeFilter=(filter)=>{
     <div className='bg-secondary'>
       <h1 className='text-center text-light '>Blog</h1>
       <h6 className='text-center text-light'>Se afiseaza postari din {filter}</h6>
-      <Container fluid>
+      <Container className=' min-100-vh' fluid>
         <Row>
           {/* butoanele din stanga */}
           <Col  sm={3}>
