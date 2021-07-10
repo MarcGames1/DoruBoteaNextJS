@@ -2,9 +2,9 @@
 id: 1
 title: contestarea procesului verbal de contraventie
 img: /blogPhotos/1/1.jpg
-metaTitluSeo: test
-metaDescriereSeo: descriereSEO
-description: Descriere Blog
+metaTitluSeo: Afla cateva vulnerabilitati inainte de a contesta procesul verbal
+metaDescriereSeo: Inainte de a lua decizia de a contesta procesul verbal de contraventie citeste cateva puncte slabe pe care sistemul contraventional din Romania il are ✅
+description: Inainte de a lua decizia de a contesta procesul verbal de contraventie citeste cateva puncte slabe pe care sistemul contraventional din Romania il are ✅
 slug: contestarea-procesului-verbal-de-contraventie
 date: "01-07-2020"
 tags: "Drept Contraventional"

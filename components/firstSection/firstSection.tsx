@@ -33,7 +33,7 @@ function FirsSection(){
                     <span className="d-block mt-4 dinamic">{state}</span>
                 </h2>
                 
-               <Button class="main-cta" text="Vedeti Mai Multe" href={'#servicii'}/>
+               <Button class="main-cta" text="Vedeti Mai Multe" href={'#Servicii'}/>
 
             </div>
         </div>

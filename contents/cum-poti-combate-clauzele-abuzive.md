@@ -3,8 +3,8 @@ id: 2
 title: Clauze Abuzive Ce sunt si cum le poti combate
 img: /blogPhotos/2/1.jpg
 metaTitluSeo: Clauze Abuzive Ce sunt si cum le poti combate
-metaDescriereSeo: descriereSEO
-description: Afla Cum poti Combate clauzele abuzive ale bancilor
+metaDescriereSeo: Afla ce sunt si cum poti sa combati clauzele abuzive ale bancilor, si cum a reusit ⚖️ Cabinet Avocat Doru Botea sa le invinga pentru clientii sai ⚖️
+description: Afla ce sunt si cum poti sa combati clauzele abuzive ale bancilor, si cum a reusit ⚖️ Cabinet Avocat Doru Botea sa le invinga pentru clientii sai ⚖️
 slug: cum-poti-combate-clauzele-abuzive
 date: "02-07-2020"
 tags: 'Drept Bancar'
