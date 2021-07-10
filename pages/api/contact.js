@@ -22,7 +22,7 @@ const transporter = nodemailer.createTransport({
 const mailData = {
     
     from: 'contact.avocat.dorubotea@gmail.com',
-    to: 'george.marcu20@gmail.com',
+    to: 'avocat.dorubotea@gmail.com',
     subject: `[FORMULAR_CONTACT]${req.body.name.toString()} a completat formularul: `,
     text:`NUME:${req.body.name.toString()}
     EMAIL: ${req.body.email.toString()}
