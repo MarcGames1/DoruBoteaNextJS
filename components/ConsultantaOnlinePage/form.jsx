@@ -132,7 +132,7 @@ setSubmitted(false)
                     a datelor</a></label>
             <input required type="checkbox" name="gdpr" onChange={(e)=>{setGdpr(e.target.value)}}/>
         </fieldset>
-        <button className="btn btn-success" type="submit"
+        <button className="btn btn-success" id='butonContact' type="submit"
          onClick={(e)=>{handleSubmit(e)
          document.querySelector("form").reset()
          resetState()
