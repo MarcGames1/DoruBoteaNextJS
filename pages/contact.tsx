@@ -1,3 +1,4 @@
+import { NextSeo } from "next-seo";
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Form from "../components/ConsultantaOnline/Form/form";
@@ -6,7 +7,11 @@ import Orar from "../components/contact/orar";
 import GoogleMaps from "../components/GoogleMaps/GoogleMaps";
 
 const page = () => {
+
+  const title ='Avocat Brasov ⚖️ Doru Botea Contact' 
+  const description = 'Pagina de Contact'
   return (<>
+   <NextSeo title={title} description={description} />
     <div className="parallax"></div>
     <Container fluid className='bg-black justify-content-evenly' >
       {/* Stack the columns on mobile by making one full-width and the other half-width */}
