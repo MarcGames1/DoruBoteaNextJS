@@ -17,7 +17,7 @@ const page=()=>{
 
     return(<>
         <SecondaryPage 
-        metaTitle={'✅ Avocat Drept Contraventional Brasov  ⚖️ Doru Botea ✅'}
+        metaTitle={'Avocat Drept Contraventional Brasov  ⚖️ Doru Botea'}
         metaDescription={'⚖️ Cabinet Avocat Doru Botea  cele mai bune solutii  in cazuri contraventionale ✅Afla cum te putem ajuta in a obtine o reducere a amenzii sau chiar anularea ei'}
         h1={'DREPT CONTRAVENTIONAL'}
         >

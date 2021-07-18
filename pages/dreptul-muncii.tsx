@@ -28,7 +28,7 @@ const argumenteSedinteDeMediere=['Negocierea, stabilirea si acordarea drepturilo
 
     return(<>
         <SecondaryPage 
-        metaTitle={'✅ Avocat Dreptul Muncii Brasov ⚖️ Doru Botea ✅ '}
+        metaTitle={'Avocat Dreptul Muncii Brasov ⚖️ Doru Botea'}
         metaDescription={'⚖️ Cabinet Avocat Doru Botea ✅ cele mai bune solutii  in cazuri de litigii de munca ✅  Profesionalism si  ✅ Preturi decente Afla cum te putem ajuta'
     }
     h1={'Avocat Dreptul Muncii'}

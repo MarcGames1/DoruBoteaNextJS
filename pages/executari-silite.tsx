@@ -26,7 +26,7 @@ const page = () => {
 
     return (<>
         <SecondaryPage
-            metaTitle={'✅Avocat Executari Silite Brasov ⚖️ Doru Botea✅'}
+            metaTitle={'Avocat Executari Silite Brasov ⚖️ Doru Botea'}
             metaDescription={'⚖️ Cabinet Avocat Doru Botea ✅ cele mai bune solutii  in cazuri de executare silita  ✅  Profesionalism si  ✅ Preturi decente Afla cum te putem ajuta'}
             h1={'Executari Silite'}
         >

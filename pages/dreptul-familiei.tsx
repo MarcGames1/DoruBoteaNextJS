@@ -26,7 +26,7 @@ const page = () => {
 
     return (<>
         <SecondaryPage
-            metaTitle={'✅ Avocat Divort Brasov ⚖️  Doru Botea ✅'}
+            metaTitle={'Avocat Divort Brasov ⚖️  Doru Botea'}
             metaDescription={'⚖️ Cabinet Avocat Doru Botea ✅ cele mai bune solutii  pentru un proces de divort  ✅  Profesionalism si  ✅ Preturi decente Afla cum te putem ajuta'}
             h1={'Procesul de divort'}
         >

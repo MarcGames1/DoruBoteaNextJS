@@ -7,7 +7,7 @@ import SecondaryPage from "../components/SecondaryPage";
 const page=()=>{
     return(<>
         <SecondaryPage 
-        metaTitle={'✅ Avocat Drept Imobiliar Brasov  ⚖️ Doru Botea ✅'}
+        metaTitle={'Avocat Drept Imobiliar Brasov  ⚖️ Doru Botea'}
         metaDescription={'⚖️ Cabinet Avocat Doru Botea  cele mai bune solutii  in cazuri de Drept Imobiliar ✅Tranzactii imobiliare, ✅Dreptul constructiilor  la  ✅Preturi decente'}
         h1={'Drept Imobiliar'}
         >

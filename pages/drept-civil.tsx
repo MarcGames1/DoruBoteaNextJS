@@ -49,7 +49,7 @@ const page=()=>{
 
     return(<>
         <SecondaryPage 
-        metaTitle={'✅Avocat Drept Civil Brasov ⚖️ Doru Botea✅'}
+        metaTitle={'Avocat Drept Civil Brasov ⚖️ Doru Botea'}
         metaDescription={'⚖️ Cabinet Avocat Doru Botea ✅ cele mai bune solutii  pentru probleme de ordin civil  ✅  Profesionalism si  ✅ Preturi decente Afla cum te putem ajuta'}
         h1={'Drept Civil'}
         >

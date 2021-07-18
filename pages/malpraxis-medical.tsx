@@ -6,7 +6,7 @@ const page = () => {
 
     return (<>
         <SecondaryPage background-class='bg-light'
-            metaTitle={'✅Avocat Malpraxis Medical Brasov ⚖️ Doru Botea✅'}
+            metaTitle={'Avocat Malpraxis Medical Brasov ⚖️ Doru Botea'}
             metaDescription={'⚖️ Cabinet Avocat Doru Botea ✅ cele mai bune solutii  in cazuri de malpraxis medical  ✅  Profesionalism si  ✅ Preturi decente Afla cum te putem ajuta'}
             h1={'Avocat Malpraxis Medical'}
         >

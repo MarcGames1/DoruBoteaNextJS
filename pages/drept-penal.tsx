@@ -19,9 +19,9 @@ const listaServicii=[
 
     return(<>
        <SecondaryPage 
-       metaTitle={'DREPT PENAL'}
-       metaDescription={'Descriere'}
-       h1={'DREPT PENAL'}
+       metaTitle={'Avocat Penalist Brasov ⚖️  Doru Botea'}
+       metaDescription={'⚖️ Cabinet Avocat Doru Botea ✅ va aparam interesele si va ajutam sa va exercitati drepturile  ✅  Profesionalism si  ✅ Preturi decente Afla cum te putem ajuta'}
+       h1={'Avocat Penalist Doru Botea'}
        >
       
 <Jumbotron>

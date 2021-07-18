@@ -12,7 +12,7 @@ const page=()=>{
        
     return(<>
         <SecondaryPage 
-        metaTitle={'✅ Avocat Drept Bancar Brasov ⚖️ Doru Botea ✅'}
+        metaTitle={'Avocat Drept Bancar Brasov ⚖️ Doru Botea'}
         metaDescription={'⚖️ Cabinet Avocat Doru Botea  cele mai bune solutii  in cazuri de drept bancar ✅Afla cum te putem ajuta pentru a transforma relatia cu banca in avantajul tau'}
         h1={'DREPT Bancar'}
         >

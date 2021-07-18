@@ -10,7 +10,7 @@ const img ="/assets/images/background1.webp"
 
 export default function Home() {
 
-const title = "Avocat Brasov ✅ Doru Botea ⚖" 
+const title = "Avocat Brasov ⚖ Doru Botea" 
 const description = "Avocat Doru Botea lupta pana la capat gasind✅cele mai bune solutii in conditiile legii pentru ca drepturile si libertatile dumneavoastra sa fie respectate"
 
 

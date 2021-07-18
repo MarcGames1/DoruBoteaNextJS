@@ -18,7 +18,7 @@ const servicii=[
 
     return(<>
         <SecondaryPage 
-        metaTitle={'✅ Avocat Drept Administrativ Brasov ⚖️ Doru Botea ✅'}
+        metaTitle={'Avocat Drept Administrativ Brasov ⚖️ Doru Botea'}
         metaDescription={'⚖️ Cabinet Avocat Doru Botea  cele mai bune solutii  in cazuri de drept administrativ ✅Afla cum te putem ajuta pentru a transforma relatia cu statul in avantajul tau'}
         h1={'DREPT administrativ'}
         >

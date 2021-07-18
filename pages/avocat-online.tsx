@@ -6,7 +6,7 @@ import Text from "../components/ConsultantaOnlinePage/text";
 
 
 const page = () => {
-    const title = "Avocat Online ✅ Consultanta Juridica Online ⚖️ Avocat Doru Botea ✅"
+    const title = "Avocat Online Consultanta Juridica Online ⚖️ Avocat Doru Botea"
     const description = "Beneficiaza de Consultanta juridica online prin Whatsapp cu onorarii decente. ✅ Afla care este rezolvarea problemelor tale juridice ✅ Programeaza-te acum"
 
 
