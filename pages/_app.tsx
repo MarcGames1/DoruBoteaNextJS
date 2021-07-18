@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import '../styles/main.css'
 import React, { useState, useEffect } from 'react';
 import TagManager from 'react-gtm-module';
-
+import ConsoleMessage from '../scripts/console'
 import { useRouter } from 'next/router'
 
 import * as ga from '../lib/ga'
@@ -55,7 +55,7 @@ const MyApp=({ Component, pageProps }:AppProps) =>{
   const [blogs, setBlogs] = useState({})
   // const updateBlogs = (blogs :object)=>{setBlogs(blogs); console.log('updated Blogs Globally')}
 const color = 'white'
-
+ConsoleMessage()
   return  <>
   <Head>
     <meta

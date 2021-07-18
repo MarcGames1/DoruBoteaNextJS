@@ -1,0 +1,8 @@
+{
+    "name": "Avocat Doru Botea",
+    "theme_color": "#282e3f",
+    "background_color": "#282e3f",
+    "display": "browser",
+    "scope": "/",
+    "start_url": "/"
+  }
