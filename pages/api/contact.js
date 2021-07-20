@@ -11,17 +11,18 @@ const transporter = nodemailer.createTransport({
     port: 465,
     host: "smtp.gmail.com",
     auth: {
-        user: process.env.NODEMAILER_USER,
-        pass: process.env.NODEMAILER_PASS,
+        user: 'contact.avocat.dorubotea@gmail.com',
+        pass: 'FormularContact1!',
     },
     secure: true,
 })
 
 
-
+console.log(transporter)
+console.log(process.env.NODEMAILER_USER)
+console.log(process.env.NODEMAILER_PASS)
 const mailData = {
-    
-    from: 'contact.avocat.dorubotea@gmail.com',
+    from: process.env.NODEMAILER_USER,
     to: 'avocat.dorubotea@gmail.com',
     subject: `[FORMULAR_CONTACT]${req.body.name.toString()} a completat formularul: `,
     text:`NUME:${req.body.name.toString()}
