@@ -1,9 +1,0 @@
-# Group 1
-User-agent: Googlebot
-
-
-# Group 2
-User-agent: *
-Allow: /
-
-Sitemap: https://avocatdorubotea.ro/sitemap.xml
