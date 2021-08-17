@@ -93,7 +93,7 @@ const Footer = () => {
         </main>
         <hr/>
 
-        <p>Toate Drepturile sunt rezervate de Cabinet Avocat Doru Botea | site-ul a fost dezvoltat si optimizat SEO de Marcu Alexandru </p>
+        <p>Toate Drepturile sunt rezervate de Cabinet Avocat Doru Botea | site-ul a fost dezvoltat si optimizat SEO de <a className='link-secondary primary-color ' href='https://www.alexandru-marcu.ro/' rel='nofollow'>Marcu Alexandru</a> </p>
 
     </main>
 </footer>
