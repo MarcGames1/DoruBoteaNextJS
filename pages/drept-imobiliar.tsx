@@ -1,4 +1,3 @@
-import { Container } from "next/app";
 import React from "react";
 import { Accordion, Alert, Card, ListGroup } from "react-bootstrap";
 
