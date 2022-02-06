@@ -3,7 +3,8 @@ import {NextSeo} from 'next-seo'
 import FirstSection from '../components/firstSection/firstSection'
 import ServiciiContainer from '../components/servicii/servicii-container'
 import ConsultantaOnline from '../components/ConsultantaOnline/consultantaOnline'
-
+import Head from 'next/head'
+import {homepage_schema} from '../schema/homepage'
 
 const img ="/assets/images/background1.webp"
 
@@ -16,7 +17,12 @@ const description = "Avocat Doru Botea lupta pana la capat gasind✅cele mai bun
 
   return (
     <>
-
+    <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(homepage_schema) }}
+        />
+    </Head>
       <NextSeo title = {title} description ={description}/>
       
       <FirstSection />
@@ -103,9 +109,9 @@ body{
   .hero-text{
     padding-bottom: 2rem;
   }
-  {/* .main-cta{
-    letter-spacing: 1.1rem;
-  } */}
+  .main-cta{
+    
+  } 
     
   
 
