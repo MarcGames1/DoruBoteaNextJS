@@ -17,7 +17,7 @@ const NavBot = () => {
     <Navbar  bg="secondary-color" variant="dark"  expand="md">
   <Container  >
    <Container fluid>
-           <Navbar.Brand className="  d-lg-none d-md-none d-sm-inline-block"  href="#home">
+           <Navbar.Brand className="  d-lg-none d-md-none d-sm-inline-block"  href="/">
                <img src="/assets/images/Phone-layout.webp"  alt="logo+phone" width={250} height={40} />
            </Navbar.Brand>
     <Navbar.Toggle className=' d-lg-none d-md-none d-sm-inline-block'  aria-controls="basic-navbar-nav"  />
@@ -29,7 +29,7 @@ const NavBot = () => {
           <Nav.Link className='align-self-center' href="/">Acasa</Nav.Link>
           <NavDropdown title="Servicii" 
             id="collasible-nav-dropdown" 
-            className='align-self-center'
+            className='align-self-center text-center'
             show={show}
             onMouseEnter={showDropdown} 
             onMouseLeave={hideDropdown}
