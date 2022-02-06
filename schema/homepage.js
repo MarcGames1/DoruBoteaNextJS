@@ -1,6 +1,7 @@
 export const homepage_schema = {
     "@context": "http://schema.org",
     "@type": "LegalService",
+    "name": "Cabinet Avocat Doru Botea ⚖️",
     "founder": {
         "@type": "Person",
         "name": "Doru Botea",
