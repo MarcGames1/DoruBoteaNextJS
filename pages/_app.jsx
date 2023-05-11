@@ -1,4 +1,4 @@
-import { AppProps } from 'next/app'
+
 // add bootstrap css 
 import 'bootstrap/dist/css/bootstrap.css'
 import '../styles/main.css'
@@ -20,7 +20,7 @@ import Phone from '../components/svgComponents/phone';
 // <Component {...pageProps}  />
 // <Spinner  animation="border" variant="secondary" />
 
-const MyApp=({ Component, pageProps }:AppProps) =>{
+const MyApp=({ Component, pageProps }) =>{
   
 
 
@@ -29,7 +29,7 @@ const MyApp=({ Component, pageProps }:AppProps) =>{
   //blog state for similar articles filter
 
   const [filter, setFilter]= useState('toate categoriile')
-  const changeFilter = (newFilter :string)=>{setFilter(newFilter)}
+  const changeFilter = (newFilter)=>{setFilter(newFilter)}
   
   // const updateBlogs = (blogs :object)=>{setBlogs(blogs); console.log('updated Blogs Globally')}
 const color = 'white'
