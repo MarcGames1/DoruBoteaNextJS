@@ -27,7 +27,7 @@ export default class MyDocument extends Document {
       <Html lang="ro_RO">
         <Head>
           {/* Google Tag Manager */}
-          <Script
+          <script
             id="gtm-script"
             defer
             strategy="afterInteractive"
@@ -38,7 +38,7 @@ export default class MyDocument extends Document {
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-5D4CHRX');`,
             }}
-          ></Script>
+          ></script>
         </Head>
         <body>
           <noscript
