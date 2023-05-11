@@ -28,7 +28,7 @@ export default class MyDocument extends Document {
         <Head>
           {/* Google Tag Manager */}
           <Script
-            id="google-tag-manager script"
+            id="gtm-script"
             defer
             strategy="afterInteractive"
             dangerouslySetInnerHTML={{
