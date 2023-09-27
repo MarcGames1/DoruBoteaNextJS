@@ -7,10 +7,10 @@ import Image from 'next/image'
 const NavBarBrand = () => {
 
     return <Link href="/">
-    <a>
-    <Image src='/assets/images/logo.webp' objectFit="contain" layout="fixed"  width={60}
+    
+    <Image alt="Logo Avocat Doru Botea" src='/assets/images/logo.webp' objectFit="contain" layout="fixed"  width={60}
     height={60} />
-    </a>
+    
     </Link>
 }
 

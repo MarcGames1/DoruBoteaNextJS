@@ -55,7 +55,7 @@ export default function Search() {
           {results.map(({ id, title }) => (
             <li className={styles.result} key={id}>
               <Link href="/posts/[id]" as={`/posts/${id}`}>
-                <a>{title}</a>
+                {title}
               </Link>
             </li>
           ))}
