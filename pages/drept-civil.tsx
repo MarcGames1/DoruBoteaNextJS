@@ -47,100 +47,129 @@ const page=()=>{
 
     ]
 
-    return(<>
-        <SecondaryPage 
-        metaTitle={'Avocat Drept Civil Brasov ⚖️ Doru Botea'}
-        metaDescription={'⚖️ Cabinet Avocat Doru Botea ✅ cele mai bune solutii  pentru probleme de ordin civil  ✅  Profesionalism si  ✅ Preturi decente Afla cum te putem ajuta'}
-        h1={'Drept Civil'}
+    return (
+      <>
+        <SecondaryPage
+          metaTitle={'Avocat Drept Civil Brasov ⚖️ Doru Botea'}
+          metaDescription={
+            '⚖️ Cabinet Avocat Doru Botea ✅ cele mai bune solutii  pentru probleme de ordin civil  ✅  Profesionalism si  ✅ Preturi decente Afla cum te putem ajuta'
+          }
+          h1={'Drept Civil'}
         >
+          <Accordion defaultActiveKey="0" className="text-dark">
+            <Accordion.Item eventKey="0">
+              <Accordion.Header
+                className="cursor-poiner hover-info"
+                as={Alert}
+                variant="info"
+              >
+                <h2 className="h6"> ✅Drepturi Reale:</h2>
+              </Accordion.Header>
 
+              <Accordion.Body>
+                <Card.Body>
+                  <ListGroup>
+                    {drepturiReale.map((dreptReal) => (
+                      <ListGroup.Item key={dreptReal}>
+                        {'✅ '}
+                        {dreptReal}
+                      </ListGroup.Item>
+                    ))}
+                  </ListGroup>
+                </Card.Body>
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="1">
+              <Accordion.Header
+                className="cursor-poiner hover-info"
+                as={Alert}
+                variant="info"
+               
+              >
+                <h2 className="h6">✅ Mosteniri:</h2>
+              </Accordion.Header>
+              <Accordion.Body >
+                  <ListGroup>
 
-<Accordion className='text-dark'> 
-  <Card>
-   
-         
-      <Accordion.Toggle className="cursor-poiner hover-info" as={Alert}  variant="info" eventKey="0">
-     <h2 className="h6"> ✅Drepturi Reale:</h2>
-      </Accordion.Toggle>
-    
-    <Accordion.Collapse eventKey="0">
-      <Card.Body>
-      <ListGroup>
-          {drepturiReale.map((dreptReal)=><ListGroup.Item key={dreptReal}>{'✅ '}{dreptReal}</ListGroup.Item>)}
-          </ListGroup>
+               
+                    {mosteniri.map((mostenire) => (
+                      <ListGroup.Item key={mostenire}>
+                        {'✅ '}
+                        {mostenire}
+                      </ListGroup.Item>
+                    ))}
+                  </ListGroup>
+                
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="2">
+              <Accordion.Header
+                className="cursor-poiner hover-info"
+                as={Alert}
+                variant="info"
+               
+              >
+                <h2 className="h6">
+                  ✅ Contracte: redactare antecontract, contract:
+                </h2>
+              </Accordion.Header>
 
-      </Card.Body>
-    </Accordion.Collapse>
-  </Card>
-  <Card>
-    
-    
-    <Accordion.Toggle className="cursor-poiner hover-info" as={Alert}  variant="info" eventKey="1">
-  <h2 className='h6'>✅ Mosteniri:</h2>
-      </Accordion.Toggle>
-    
-    <Accordion.Collapse eventKey="1">
-    <Card.Body>
-      <ListGroup>
-          {mosteniri.map((mostenire)=><ListGroup.Item key={mostenire}>{'✅ '}{mostenire}</ListGroup.Item>)}
-          </ListGroup>
+              <Accordion.Body >
+                
+                  <ListGroup>
+                    {contracte.map((mostenire) => (
+                      <ListGroup.Item key={mostenire}>
+                        {'✅ '}
+                        {mostenire}
+                      </ListGroup.Item>
+                    ))}
+                  </ListGroup>
+                
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="3">
+              <Accordion.Header
+                className="cursor-poiner hover-info"
+                as={Alert}
+                variant="info"
+                
+              >
+                <h2 className="h6">
+                  ✅ Consultanta, asistenta si reprezentare juridica
+                </h2>
+              </Accordion.Header>
 
-      </Card.Body>
-    </Accordion.Collapse>
-  </Card>
-  <Card>
-    
-    
-    <Accordion.Toggle className="cursor-poiner hover-info" as={Alert}  variant="info" eventKey="2">
-  <h2 className='h6'>✅ Contracte: redactare antecontract, contract:</h2>
-      </Accordion.Toggle>
-    
-    <Accordion.Collapse eventKey="2">
-    <Card.Body>
-      <ListGroup>
-          {contracte.map((mostenire)=><ListGroup.Item key={mostenire}>{'✅ '}{mostenire}</ListGroup.Item>)}
-          </ListGroup>
+              <Accordion.Body>
+               
+                  <ListGroup>
+                    {servicii.map((mostenire) => (
+                      <ListGroup.Item key={mostenire}>
+                        {'✅ '}
+                        {mostenire}
+                      </ListGroup.Item>
+                    ))}
+                  </ListGroup>
+               
+              </Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
 
-      </Card.Body>
-    </Accordion.Collapse>
-  </Card>
-  <Card>
-    
-    
-    <Accordion.Toggle className="cursor-poiner hover-info" as={Alert}  variant="info" eventKey="3">
-  <h2 className='h6'>✅ Consultanta, asistenta si reprezentare juridica</h2>
-      </Accordion.Toggle>
-    
-    <Accordion.Collapse eventKey="3">
-    <Card.Body>
-      <ListGroup>
-          {servicii.map((mostenire)=><ListGroup.Item key={mostenire}>{'✅ '}{mostenire}</ListGroup.Item>)}
-          </ListGroup>
+          <Alert variant={'success'}>
+            <p>
+              Obiectivul nostru este sa fim de folos clientilor, astfel incat
+              acestia sa isi poata desfasura activitatea fara a se concentra
+              asupra unor detalii juridice care nu tin de competenta lor.
+            </p>
+          </Alert>
+        </SecondaryPage>
 
-      </Card.Body>
-    </Accordion.Collapse>
-  </Card>
-</Accordion>
-
-<Alert variant={'success'}>
-    <p>Obiectivul nostru este sa fim de folos clientilor, astfel incat acestia sa isi poata desfasura activitatea fara a se concentra asupra unor detalii juridice care nu tin de competenta lor.</p>
-</Alert>
-
-
-
-
-
-</SecondaryPage> 
-
-
-<style jsx global>{`
-.parallax{
-background-image: url('/secondaryPage/civil.jpg');
-}
-    
-`}</style>
-
-</>)
+        <style jsx global>{`
+          .parallax {
+            background-image: url('/secondaryPage/civil.jpg');
+          }
+        `}</style>
+      </>
+    );
 }
 
 export default page

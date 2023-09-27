@@ -26,62 +26,96 @@ const argumenteSedinteDeMediere=['Negocierea, stabilirea si acordarea drepturilo
 
 
 
-    return(<>
-        <SecondaryPage 
-        metaTitle={'Avocat Dreptul Muncii Brasov ⚖️ Doru Botea'}
-        metaDescription={'⚖️ Cabinet Avocat Doru Botea ✅ cele mai bune solutii  in cazuri de litigii de munca ✅  Profesionalism si  ✅ Preturi decente Afla cum te putem ajuta'
-    }
-    h1={'Avocat Dreptul Muncii'}
-    >
+    return (
+      <>
+        <SecondaryPage
+          metaTitle={'Avocat Dreptul Muncii Brasov ⚖️ Doru Botea'}
+          metaDescription={
+            '⚖️ Cabinet Avocat Doru Botea ✅ cele mai bune solutii  in cazuri de litigii de munca ✅  Profesionalism si  ✅ Preturi decente Afla cum te putem ajuta'
+          }
+          h1={'Avocat Dreptul Muncii'}
+        >
+          <h2>Ce oferim si cum va putem ajuta?</h2>
 
-        <h2>Ce oferim si cum va putem ajuta?</h2>
-<Accordion defaultActiveKey="0" className='text-dark'> 
-  <Card>
-    <Card.Header>
-          <h6 className='text-secondary'>In ceea ce priveste contractul individual de munca va putem ajuta cu </h6>
-      <Accordion.Toggle className="cursor-poiner hover-info" as={Alert}  variant="info" eventKey="0">
-     <h2 className="h6"> ✅ Asistenta juridica si reprezentarea Dvs.  in litigiile de munca ivite intre angajator si salariat privitoare la <span className='text-success'>contractul individual de munca</span> </h2>consultanta juridica cu privire la:
-      </Accordion.Toggle>
-    </Card.Header>
-    <Accordion.Collapse eventKey="0">
-      <Card.Body>
-      <ListGroup>
-          {argumenteContractMunca.map((argument)=><ListGroup.Item key={argument}>{'✅ '}{argument}</ListGroup.Item>)}
-          </ListGroup>
+          <Accordion defaultActiveKey="0" className="text-dark">
+            <Accordion.Item eventKey="0">
+              <Accordion.Header
+                className="cursor-poiner hover-info"
+                as={Alert}
+                variant="info"
+              >
+                <div>
+                  {' '}
+                  <h6 className="text-secondary">
+                    In ceea ce priveste contractul individual de munca va putem
+                    ajuta cu:{' '}
+                  </h6>
+                  <h2 className="h6">
+                    {' '}
+                    ✅ Asistenta juridica si reprezentarea Dvs. in litigiile de
+                    munca ivite intre angajator si salariat privitoare la{' '}
+                    contractul individual de munca dar si consultanta juridica
+                    cu privire la:
+                  </h2>
+                </div>
+              </Accordion.Header>
 
-      </Card.Body>
-    </Accordion.Collapse>
-  </Card>
-  <Card>
-    <Card.Header>
-    <h6 className='text-secondary'>Pe parcursul desfasurarii contractului individual de munca sau dupa incheierea acestuia oferim</h6>
-    <Accordion.Toggle className="cursor-poiner hover-info" as={Alert}  variant="info" eventKey="1">
-  <h2 className='h6'>✅ Asistenta juridica si reprezentarea clientilor in litigiile de munca privitoare la <span className='text-success'>drepturile si obligatiile salariatilor sau angajatorilor</span></h2>
-      </Accordion.Toggle>
-    </Card.Header>
-    <Accordion.Collapse eventKey="1">
-    <Card.Body>
-      <ListGroup>
-          {argumenteSedinteDeMediere.map((argument)=><ListGroup.Item key={argument}>{'✅ '}{argument}</ListGroup.Item>)}
-          </ListGroup>
+              <Accordion.Body>
+                <ListGroup>
+                  {argumenteContractMunca.map((argument) => (
+                    <ListGroup.Item key={argument}>
+                      {'✅ '}
+                      {argument}
+                    </ListGroup.Item>
+                  ))}
+                </ListGroup>
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="1">
+              <Accordion.Header
+                className="cursor-poiner hover-info"
+                as={Alert}
+                variant="info"
+              >
+                <div>
+                  <h6 className="text-secondary">
+                    Pe parcursul desfasurarii contractului individual de munca
+                    sau dupa incheierea acestuia oferim
+                  </h6>
 
-      </Card.Body>
-    </Accordion.Collapse>
-  </Card>
-</Accordion>
+                  <h2 className="h6">
+                    ✅ Asistenta juridica si reprezentarea clientilor in
+                    litigiile de munca privitoare la{' '}
+                    <span className="text-success">
+                      drepturile si obligatiile salariatilor sau angajatorilor
+                    </span>
+                  </h2>
+                </div>
+              </Accordion.Header>
 
+              <Accordion.Collapse eventKey="1">
+                <Card.Body>
+                  <ListGroup>
+                    {argumenteSedinteDeMediere.map((argument) => (
+                      <ListGroup.Item key={argument}>
+                        {'✅ '}
+                        {argument}
+                      </ListGroup.Item>
+                    ))}
+                  </ListGroup>
+                </Card.Body>
+              </Accordion.Collapse>
+            </Accordion.Item>
+          </Accordion>
+        </SecondaryPage>
 
-</SecondaryPage> 
-
-
-<style jsx global>{`
-.parallax{
-background-image: url('secondaryPage/muncii.jpg');
-}
-    
-`}</style>
-
-</>)
+        <style jsx global>{`
+          .parallax {
+            background-image: url('secondaryPage/muncii.jpg');
+          }
+        `}</style>
+      </>
+    );
 }
 
 export default page
