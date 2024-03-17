@@ -1,0 +1,69 @@
+
+.parallax{
+    height: 100vh;
+    background-image: url(../assets/contact-assets/brasov-sus.jpg);
+    background-size: cover;
+}
+body{
+    width: 100%;
+}
+article{
+    /* background-attachment: fixed; */
+    /* background-color: rgba(255, 255, 255, 0.7); */
+    /* background-blend-mode:lighten; */
+    margin: auto;
+    width: 99vw;
+    /* border: red solid 5px; */
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 2.5%;
+   height: 110vh;
+}
+
+.cobco img{
+    display: block;
+    width: 300px;
+    height: auto;
+}
+
+.cobco h1, .categorie h1{
+    color: var(--secondary-font-color);
+    text-align: center;
+    font-size: 1rem;
+}
+
+article .contact2{
+    display: flex;
+    /* margin: auto; */
+  }
+
+article h2, i{
+    font-size: 1rem;
+    text-align: center;
+    vertical-align: middle;
+}
+article .form-container{
+    border: none;
+    background-color:var(--fundal-formular);
+}
+ article .form-container h1{
+     font-size: 1.4em;
+ }   
+
+
+.categorie{
+    line-height: 4rem;
+}
+.categorie section h1:last-child{
+    font-size: .9rem;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#ceas::before{
+    content: icon;
+}
+i{
+    color: var(--secondary-font-color);
+}

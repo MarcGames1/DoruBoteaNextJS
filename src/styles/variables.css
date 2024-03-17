@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap);
+:root{
+ --decorativeFont: 'Noto Serif', serif;
+  
+    --def:black;
+    /* --secondary-button-color: */
+  --info: var(--primary-color);
+  --primary-color:#282E3F;
+  --secondary-color:#333a4d;
+  --hover-color:#717583;
+  --active-color:black;
+  --secondary-font-color:#ab8356;
+  --primary-font-color:white;
+  --primary-color-transparent:rgba(40, 46, 63, 0.8);
+  --transparent:rgba(0, 0, 0, 0.7);
+  --site-width:96vw;
+  --bar-heigth:6vh;
+
+  --fundal-formular: #ab8356;
+  --form-input:#ff0404;
+
+
+  /* BOOTSTRAP COLORS */
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: var(--primary-color);
+  --bs-secondary: var(--secondary-color);
+  --bs-success: #198754;
+  --bs-info: #164c57;
+  --bs-hover-info:#bfe8f0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #000000;
+  /* BOOTSTRAP COLORS */
+  }
+
+/*  */
+
+.bg-primary-color{
+  background-color:var(--primary-color) ;
+}
+.primary-color{
+  color: var(--primary-text-color)
+}
+.secondary-color{
+  color: var(--secondary-font-color-color);
+}
+.bg-secondary-color{
+  background-color: var(--secondary-color);
+}
+.white{
+  color:white;
+}
+.bg-black{
+  background-color: #000000;
+}
+.bg-black-t{
+  background-color: var(--transparent);
+}
+.text-dark{
+  color:var(--bs-dark)!important;
+}
+
+.hover-info:hover{
+  background-color:var(--bs-hover-info);
+}
+
+.bg-secondary-b{
+  background-color:#282E3F;
+}

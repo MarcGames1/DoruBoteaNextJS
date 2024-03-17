@@ -1,0 +1,31 @@
+.first-section {
+    display: block;
+    width: 100vw;
+    min-height: 100vh;
+    background-blend-mode: darken;
+    background-color: var(--transparent);
+    background-image: url(/assets/images/background1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.first-section .content:first-child {
+    text-align: center;
+}
+
+.first-section .content {
+    height: 100vh;
+    font-family: var(--decorativeFont);
+    align-items: center;
+    position: relative;
+    display: flex;
+    width: var(--site-width);
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}

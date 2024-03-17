@@ -8,27 +8,33 @@
     ],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": false,
-    "forceConsistentCasingInFileNames": true,
+    "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "pages/__document.js",
-    "components/contact/orar.jsx",
-    "pages/blog/index.js",
-    "components/blogComponents/blogProgressBar.jsx",
-    "pages/_document.jsx",
-    "pages/_app.jsx"
+    ".next/types/**/*.ts",
+    "sitemap.config.js",
+    "out/types/**/*.ts"
   ],
   "exclude": [
     "node_modules"

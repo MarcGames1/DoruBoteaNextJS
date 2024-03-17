@@ -1,0 +1,117 @@
+.appearFirstL{
+    opacity: 0;
+    animation: appearL 2s ease-in-out 1s 1 normal forwards;
+  }
+  
+  
+  
+  .appearSecondL{
+    opacity: 0;
+    animation: appearL 2s ease-in-out 1.7s 1 normal forwards;
+  }
+  
+  .appearFirstR{
+    opacity: 0;
+    animation: appearR 2s ease-in-out 1s 1 normal forwards;
+  }
+  
+  .appearSecondR{
+    opacity: 0;
+    animation: appearR 2s ease-in-out 1.7s 1 normal forwards;
+  }
+  
+
+  
+
+  @keyframes appearL{
+    from{
+      transform: translateX(-100vw);
+      opacity: 0;
+    }
+    
+    25%{
+      
+      opacity: 0.25;
+    }
+    
+    75%{
+      transform: translateX(25vw);
+      opacity: 0.25;
+    }
+    
+    to{
+      transform: translateX(0vw);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes appearR{
+    from{
+      transform: translateX(100vw);
+      opacity: 0;
+    }
+    
+    25%{
+      
+      opacity: 0.25;
+    }
+    
+    75%{
+      transform: translateX(-25vw);
+      opacity: 0.25;
+    }
+    
+    to{
+      transform: translateX(0vw);
+      opacity: 1;
+    }
+}
+
+
+
+ 
+  
+  @keyframes appearL{
+    from{
+      transform: translateX(-100vw);
+      opacity: 0;
+    }
+    
+    25%{
+      
+      opacity: 0.25;
+    }
+    
+    75%{
+      transform: translateX(25vw);
+      opacity: 0.25;
+    }
+    
+    to{
+      transform: translateX(0vw);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes appearR{
+    from{
+      transform: translateX(100vw);
+      opacity: 0;
+    }
+    
+    25%{
+      
+      opacity: 0.25;
+    }
+    
+    75%{
+      transform: translateX(-25vw);
+      opacity: 0.25;
+    }
+    
+    to{
+      transform: translateX(0vw);
+      opacity: 1;
+    }
+}
+
