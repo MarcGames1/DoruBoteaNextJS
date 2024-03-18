@@ -1,10 +1,10 @@
 import { Alert } from "react-bootstrap";
 import Info from "../svgComponents/info";
-
+import styles from "./ConsultantaOnline.module.css";
 const Text = () => {
   return (
     <>
-      <div className="text">
+      <div className={styles.text}>
         <h3>CUM FUNCȚIONEAZĂ?</h3>
         <h3>SIMPLU:</h3>
         <ol>

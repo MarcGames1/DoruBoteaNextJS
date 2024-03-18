@@ -1,0 +1,24 @@
+.parallax {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+
+    width: 100%;
+    height: 50vh;
+}
+
+.contact2 {
+    position: relative;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+.parallax {
+    background-image: url(assets/pages/consultantaonline/consultantaonline.jpg);
+}
