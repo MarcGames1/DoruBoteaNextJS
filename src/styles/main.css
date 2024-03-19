@@ -215,3 +215,9 @@ position: relative;
 .navbar-toggler{
   float: right !important;
 }
+
+#sticky-phone {
+  position: fixed;
+  z-index: 999999999999;
+  bottom: 0;
+}

@@ -1,0 +1,61 @@
+
+.parallax {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-position: center;
+    background-attachment: fixed;
+
+    height: 100%;
+
+    width: 100%;
+    height: 50vh;
+}
+.text {
+    display: block;
+
+    margin: 5em auto;
+    line-height: 2em;
+}
+
+.text h1 {
+    text-transform: uppercase;
+}
+.text p {
+    text-indent: 2em;
+}
+.text ul {
+    margin: 0rem;
+}
+
+.categorie .text {
+    width: 80vw;
+}
+
+.categorie  h1 {
+    text-align: center;
+    margin: 1em;
+}
+
+.categorie li {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    list-style-position: inside;
+}
+/* Retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+/* iPhone Portrait and landscape */
+@media only screen and (max-device-width: 480px) and (orientation: portrait),
+only screen and (max-device-width: 480px) and (orientation: landscape) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
