@@ -1,7 +1,16 @@
 import Image from 'next/image'
 import Button from '../Button'
 import styles from './serviciiCard.module.css'
-export default function ServiciiCard ({icon, name, description, route, alt}) {
+export type ServiciiCardProps={
+  id:number,
+  icon:string,
+  name:string,
+  description:string,
+  route:string,
+  alt:string,
+  
+}
+export default function ServiciiCard ({icon, name, description, route, alt}:ServiciiCardProps) {
     
     return (
       <>

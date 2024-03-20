@@ -2,7 +2,7 @@ import React from "react";
 
 import servicii from "./date/servicii.js";
 
-import ServiciiCard from "./serviciiCard";
+import ServiciiCard, { ServiciiCardProps } from "./serviciiCard";
 
 import dynamic from "next/dynamic";
 
@@ -11,8 +11,8 @@ function ServiciiWrapper() {
     <>
       <div className="container-fluid">
         <div className="row d-flex justify-content-around">
-          {servicii.map(({ id, ...otherSectionProps }) => (
-            <ServiciiCard key={id} {...otherSectionProps} />
+          {servicii.map(({ id, ...otherSectionProps }:ServiciiCardProps) => (
+            <ServiciiCard id={id} key={id} {...otherSectionProps} />
           ))}
         </div>
       </div>
