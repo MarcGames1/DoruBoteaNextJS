@@ -7,10 +7,10 @@ const DreptAdministrativComponent = () => {
   const servicii = [
     "Anularea unor acte administrative unilaterale. recunoașterea dreptului pretins și repararea pagubelor cauzate.",
     "Obligarea autorității să emită un act sau un al înscris, respectiv să efectueze o anumită operațiune administrativă, sub sancțiunea penalităților de întârziere sau a amenzii.",
-    "încheierea, modificarea, interpretarea, executarea, anularea, rezilierea unui contract administrativ.",
-    "executarea unui act administrativ emis.",
-    "excepția de nelegalitate a unui act administrativ.",
-    "repararea pagubei produsă printr-o ordonanță declarată neconstituțională.",
+    "Incheierea, modificarea, interpretarea, executarea, anularea, rezilierea unui contract administrativ.",
+    "Executarea unui act administrativ emis.",
+    "Excepția de nelegalitate a unui act administrativ.",
+    "Repararea pagubei produsă printr-o ordonanță declarată neconstituțională.",
   ];
 
   return (
@@ -33,7 +33,7 @@ const DreptAdministrativComponent = () => {
         <ListGroup>
           {servicii.map((serviciu, idx) => (
             <ListGroup.Item key={idx}>
-              {"✅ "}
+              {"→ "}
               {serviciu}
             </ListGroup.Item>
           ))}

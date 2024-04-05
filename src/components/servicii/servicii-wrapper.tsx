@@ -1,6 +1,6 @@
 import React from "react";
 
-import servicii from "./date/servicii.js";
+import servicii from "./date/servicii";
 
 import ServiciiCard, { ServiciiCardProps } from "./serviciiCard";
 
@@ -11,7 +11,7 @@ function ServiciiWrapper() {
     <>
       <div className="container-fluid">
         <div className="row d-flex justify-content-around">
-          {servicii.map(({ id, ...otherSectionProps }:ServiciiCardProps) => (
+          {servicii.map(({ id, ...otherSectionProps }: ServiciiCardProps) => (
             <ServiciiCard id={id} key={id} {...otherSectionProps} />
           ))}
         </div>
