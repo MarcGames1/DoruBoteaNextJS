@@ -18,7 +18,7 @@ const Footer = () => {
                   layout="responsive"
                   width={111}
                   height={140}
-                  objectFit="contain"
+
                   // objectPosition="left"
                 />
               </div>
