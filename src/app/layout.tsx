@@ -37,7 +37,7 @@ export default function RootLayout({
         <html lang="ro">
           <body className={`${font.className} `}>
             {children}
-            <GoogleTagManager gtmId={process.env?.GTM_TAG || ""} />
+            <GoogleTagManager gtmId="GTM-5D4CHRX" />
           </body>
         </html>
       </DefaultConsentState>
