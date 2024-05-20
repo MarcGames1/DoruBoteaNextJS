@@ -4,6 +4,8 @@ import "../styles/main.css";
 import { Poppins } from "next/font/google";
 import { Metadata } from "next";
 import React from "react";
+import { CookiesProvider } from "next-client-cookies/server";
+import DefaultConsentState from "@/components/DefaultConsentState";
 
 const font = Poppins({
   weight: ["100", "400", "200", "300", "500", "600", "700", "800", "900"],
@@ -30,11 +32,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ro">
-      <body className={`${font.className} `}>
-        {children}
-        <GoogleTagManager gtmId={process.env?.GTM_TAG || ""} />
-      </body>
-    </html>
+    <CookiesProvider>
+      <DefaultConsentState>
+        <html lang="ro">
+          <body className={`${font.className} `}>
+            {children}
+            <GoogleTagManager gtmId={process.env?.GTM_TAG || ""} />
+          </body>
+        </html>
+      </DefaultConsentState>
+    </CookiesProvider>
   );
 }

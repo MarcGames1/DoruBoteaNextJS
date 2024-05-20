@@ -1,0 +1,20 @@
+.container{
+    background-color: #2b3035;
+    color:#ddd;
+    place-content: center;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.buttons_container {
+    display: flex;
+    margin: 1.25rem;
+    flex-direction: column;
+    gap: 1.25rem;
+}

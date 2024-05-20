@@ -4,6 +4,7 @@ import Footer from "@/components/Footer/footer";
 import WhatsappSticky from "@/components/svgComponents/stickyWhatsapp";
 import UpArrow from "@/components/svgComponents/uparrow";
 import StickyPhoneBtn from "@/components/UI/StickyPhoneBtn";
+import ConsentBanner from "@/components/ConsentBanner/ConsentBanner";
 export default function RootLayout({
   children,
 }: {
@@ -16,6 +17,7 @@ export default function RootLayout({
       <UpArrow />
       {children}
       <StickyPhoneBtn />
+      <ConsentBanner />
       <Footer />
     </>
   );
