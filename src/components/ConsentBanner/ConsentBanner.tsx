@@ -50,7 +50,7 @@ const ConsentBanner = () => {
     cookies.set("cookies_consent", JSON.stringify(consent), {
       expires: new Date(new Date().setFullYear(new Date().getFullYear() + 1)),
       path: "/",
-      domain: "marweb.ro",
+      domain: "avocatdorubotea.ro",
     });
     sendConsent(consent);
     setDecisionMade(true);
