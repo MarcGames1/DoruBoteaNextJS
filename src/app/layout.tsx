@@ -32,15 +32,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <CookiesProvider>
-      <DefaultConsentState>
-        <html lang="ro">
+    <html lang="ro">
+      <CookiesProvider>
+        <DefaultConsentState>
           <body className={`${font.className} `}>
             {children}
             <GoogleTagManager gtmId="GTM-5D4CHRX" />
           </body>
-        </html>
-      </DefaultConsentState>
-    </CookiesProvider>
+        </DefaultConsentState>
+      </CookiesProvider>
+    </html>
   );
 }
