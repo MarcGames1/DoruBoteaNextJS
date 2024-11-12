@@ -33,9 +33,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ro">
-      <CookiesProvider>
-        <DefaultConsentState>
-          <body className={`${font.className} `}>
+    <head>
+      <meta name="google-site-verification" content="oyupzPUSoRNQqQUNHUKQqR8DpLTnW2T0tI7lmZ-EFpY"/>
+    </head>
+    <CookiesProvider>
+      <DefaultConsentState>
+        <body className={`${font.className} `}>
             {children}
             <GoogleTagManager gtmId="GTM-5D4CHRX" />
           </body>
